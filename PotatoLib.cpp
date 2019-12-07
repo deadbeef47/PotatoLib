@@ -1,8 +1,17 @@
 ﻿// PotatoLib.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
+// 使用ライブラリ
+// https://github.com/glfw/glfw
+#pragma comment(lib, "glfw3.lib")
+// https://github.com/nigels-com/glew
+//#pragma comment(lib, "glew32.lib")
+#pragma comment(lib, "glew32s.lib")
+
+#pragma comment(lib, "opengl32.lib")
 
 #include <iostream>
+#include <GL\glew.h>
 
 int main()
 {
