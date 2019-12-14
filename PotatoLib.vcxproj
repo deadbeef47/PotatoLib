@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Framework\GameApplication.h" />
+    <ClInclude Include="Source\Framework\Window.h" />
     <ClInclude Include="Source\Utility\PotatoLog.h" />
     <ClInclude Include="Source\Utility\Singleton.h" />
   </ItemGroup>
