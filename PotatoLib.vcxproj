@@ -161,11 +161,13 @@
   <ItemGroup>
     <ClCompile Include="PotatoLib.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
+    <ClCompile Include="Source\Utility\Assert.cpp" />
     <ClCompile Include="Source\Utility\Log.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Framework\GameApplication.h" />
     <ClInclude Include="Source\Framework\Window.h" />
+    <ClInclude Include="Source\Utility\Assert.h" />
     <ClInclude Include="Source\Utility\Log.h" />
     <ClInclude Include="Source\Utility\Singleton.h" />
   </ItemGroup>
