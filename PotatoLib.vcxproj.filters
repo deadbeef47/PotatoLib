@@ -21,7 +21,7 @@
     <ClCompile Include="Source\Framework\GameApplication.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Utility\PotatoLog.cpp">
+    <ClCompile Include="Source\Utility\Log.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,11 @@
     <ClInclude Include="Source\Framework\GameApplication.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Utility\PotatoLog.h">
+    <ClInclude Include="Source\Framework\Window.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Framework\Window.h">
+    </ClInclude>
+    <ClInclude Include="Source\Utility\Log.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

@@ -161,12 +161,12 @@
   <ItemGroup>
     <ClCompile Include="PotatoLib.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
-    <ClCompile Include="Source\Utility\PotatoLog.cpp" />
+    <ClCompile Include="Source\Utility\Log.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Framework\GameApplication.h" />
     <ClInclude Include="Source\Framework\Window.h" />
-    <ClInclude Include="Source\Utility\PotatoLog.h" />
+    <ClInclude Include="Source\Utility\Log.h" />
     <ClInclude Include="Source\Utility\Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
