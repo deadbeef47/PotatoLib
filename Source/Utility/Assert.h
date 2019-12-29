@@ -1,6 +1,6 @@
 #pragma once
 
-#define PotatoAssert(condition, ...) PotatoLib::Assert::Check(condition, __VA_ARGS__)
+//#define PotatoAssert(condition, ...) PotatoLib::Assert::Check(condition, __VA_ARGS__)
 
 namespace PotatoLib {
 	class Assert {
