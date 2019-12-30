@@ -7,12 +7,14 @@ namespace PotatoLib {
 	struct Window {
 
 		int mWidth = 640, mHeight = 480;
+		int mPosX = -1300, mPosY = 500;
 		std::string mTitle = "Title";
 		GLFWwindow* mHandle = nullptr;
 
 		Window() {
 		
 			mHandle = glfwCreateWindow(mWidth, mHeight, mTitle.c_str(), NULL, NULL);
+			glfwSetWindowPos(mHandle, mPosX, mPosY);
 
 			glfwMakeContextCurrent(mHandle);
 
