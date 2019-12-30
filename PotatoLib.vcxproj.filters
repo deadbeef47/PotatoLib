@@ -33,6 +33,9 @@
     <ClCompile Include="Source\Utility\Log.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Render\Buffer\ElementArrayObject.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Render\Buffer\BufferObject.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -63,6 +66,9 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Source\Render\Buffer\BufferObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Render\Buffer\ElementArrayObject.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

@@ -162,6 +162,7 @@
     <ClCompile Include="PotatoLib.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
     <ClCompile Include="Source\Render\Buffer\BufferObject.cpp" />
+    <ClCompile Include="Source\Render\Buffer\ElementArrayObject.cpp" />
     <ClCompile Include="Source\Render\Shader\ProgramObject.cpp" />
     <ClCompile Include="Source\Render\Shader\ShaderObject.cpp" />
     <ClCompile Include="Source\Utility\Assert.cpp" />
@@ -172,6 +173,7 @@
     <ClInclude Include="Source\Framework\Type.h" />
     <ClInclude Include="Source\Framework\Window.h" />
     <ClInclude Include="Source\Render\Buffer\BufferObject.h" />
+    <ClInclude Include="Source\Render\Buffer\ElementArrayObject.h" />
     <ClInclude Include="Source\Render\Shader\ProgramObject.h" />
     <ClInclude Include="Source\Render\Shader\ShaderObject.h" />
     <ClInclude Include="Source\Utility\Assert.h" />
