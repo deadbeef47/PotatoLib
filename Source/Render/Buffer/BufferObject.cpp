@@ -2,6 +2,8 @@
 
 #include <GL\glew.h>
 
+#include <numeric>
+
 #include "Utility\Assert.h"
 
 namespace PotatoLib {
@@ -20,14 +22,19 @@ namespace PotatoLib {
 		return EStatus::eSuccess;
 	}
 
-	void BufferObject::PushAttribute(uint32_t aLocation, int32_t aSize, int32_t aStride) {
-		mAttributes.emplace_back(Attribute{ aLocation, aSize, aStride });
+	void BufferObject::PushAttribute(uint32_t aLocation, int32_t aSize) {
+		mAttributes.emplace_back(Attribute{ aLocation, aSize });
 	}
 
 	void BufferObject::SetupAttribute()const {
 		glBindBuffer(GL_ARRAY_BUFFER, mHandle);
 
-		for (const Attribute& lAttr : mAttributes) {
+		const auto lStride = std::accumulate(mAttributes.begin(), mAttributes.end(), 0, [](int32_t aVal, Attribute aAttrib) {
+			return aVal + aAttrib.mSize * sizeof(float);
+		});
+
+		for (int lIndex = 0; lIndex < mAttributes.size(); ++lIndex) {
+			const Attribute& lAttr = mAttributes[lIndex];
 			glEnableVertexAttribArray(lAttr.mLocation);
 
 			glVertexAttribPointer(lAttr.mLocation, lAttr.mSize, GL_FLOAT, GL_FALSE, lAttr.mStride, 0);

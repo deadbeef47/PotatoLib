@@ -13,7 +13,6 @@ namespace PotatoLib {
 		struct Attribute {
 			uint32_t mLocation = 0u;
 			int32_t mSize = 0;
-			int32_t mStride = 0;
 		};
 
 		uint32_t mHandle = 0u;
@@ -21,7 +20,7 @@ namespace PotatoLib {
 
 		EStatus Create(const VertexDataArray& aDataArray);
 
-		void PushAttribute(uint32_t aLocation, int32_t aSize, int32_t aStride);
+		void PushAttribute(uint32_t aLocation, int32_t aSize);
 		void SetupAttribute()const;
 
 	};
