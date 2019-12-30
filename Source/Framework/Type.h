@@ -1,11 +1,15 @@
 #pragma once
 
 #include <cinttypes>
+#include <vector>
 
 namespace PotatoLib {
 
-	using ProgramHandle = uint32_t;
-	using ShaderHandle = uint32_t;
+	// Shader
+
+	// Buffer
+	using VertexIndexArray = std::vector<uint32_t>;
+	using VertexDataArray = std::vector<float>;
 
 	enum class EShaderType {
 		eNone,

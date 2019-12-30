@@ -11,7 +11,7 @@ namespace PotatoLib {
 			eCompileFail,
 		};
 
-		ShaderHandle mHandle = 0u;
+		uint32_t mHandle = 0u;
 		const char* mSourceCode = "";
 		EShaderType mShaderType = EShaderType::eNone;
 

@@ -13,7 +13,7 @@ namespace PotatoLib {
 			eLinkFail,
 		};
 
-		ProgramHandle mHandle = 0u;
+		uint32_t mHandle = 0u;
 
 		EStatus Create();
 		EStatus Attach(const ShaderObject& aShaderObject);
