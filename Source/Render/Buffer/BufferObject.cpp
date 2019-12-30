@@ -37,7 +37,8 @@ namespace PotatoLib {
 			const Attribute& lAttr = mAttributes[lIndex];
 			glEnableVertexAttribArray(lAttr.mLocation);
 
-			glVertexAttribPointer(lAttr.mLocation, lAttr.mSize, GL_FLOAT, GL_FALSE, lAttr.mStride, 0);
+			const uint32_t lOffset = lIndex * lAttr.mSize * sizeof(float);
+			glVertexAttribPointer(lAttr.mLocation, lAttr.mSize, GL_FLOAT, GL_FALSE, lStride, reinterpret_cast<void*>(lOffset));
 
 			glDisableVertexAttribArray(lAttr.mLocation);
 		}
