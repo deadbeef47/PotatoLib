@@ -15,9 +15,9 @@ namespace PotatoLib {
 		const char* mSourceCode = "";
 		EShaderType mShaderType = EShaderType::eNone;
 
-		explicit ShaderObject(const char* aCode);
+		EStatus Setup(EShaderType aShaderType, const char* aCode);
 		EStatus Create(EShaderType aShaderType);
-		EStatus Compile();
+		EStatus Compile(const char* aCode);
 	};
 
 }

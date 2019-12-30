@@ -6,8 +6,15 @@
 
 namespace PotatoLib {
 
-	ShaderObject::ShaderObject(const char* aCode) :
-		mSourceCode(aCode), mShaderType(EShaderType::eNone) {
+	ShaderObject::EStatus ShaderObject::Setup(EShaderType aShaderType, const char* aCode) {
+
+		const auto lCreateRes = Create(aShaderType);
+		if (lCreateRes != EStatus::eSuccess)
+			return lCreateRes;
+
+		const auto lCompileRes = Compile(aCode);
+		if (lCompileRes != EStatus::eSuccess)
+			return lCompileRes;
 	}
 
 	ShaderObject::EStatus ShaderObject::Create(EShaderType aShaderType) {
@@ -34,7 +41,9 @@ namespace PotatoLib {
 		return EStatus::eSuccess;
 	}
 
-	ShaderObject::EStatus ShaderObject::Compile() {
+	ShaderObject::EStatus ShaderObject::Compile(const char* aCode) {
+
+		mSourceCode = aCode;
 
 		glShaderSource(mHandle, 1, &mSourceCode, NULL);
 
