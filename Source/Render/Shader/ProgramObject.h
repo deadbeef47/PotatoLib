@@ -4,7 +4,7 @@
 
 namespace PotatoLib {
 
-	class ShaderObject;
+	struct ShaderObject;
 
 	struct ProgramObject {
 		enum class EStatus {
