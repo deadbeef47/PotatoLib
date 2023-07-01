@@ -1,0 +1,28 @@
+\doxysection{Log.\+h}
+\hypertarget{_log_8h_source}{}\label{_log_8h_source}\index{Project/Source/Utility/Log.h@{Project/Source/Utility/Log.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ PotatoLog(...)\ PotatoLib::Log::Show(\_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00008}00008\ \textcolor{keyword}{namespace\ }PotatoLib\ \{}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00010}\mbox{\hyperlink{class_potato_lib_1_1_log}{00010}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_potato_lib_1_1_log}{Log}}\ \{}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00011}00011\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Show()\ \{}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class\ }Str,\ \textcolor{keyword}{class}...\ Args>}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Show(Str\ str,\ Args...\ args)\ \{}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ str;}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ Log::Show(std::forward<Args>(args)...);}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00021}00021\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_log_8h_source_l00022}00022\ \}}
+
+\end{DoxyCode}

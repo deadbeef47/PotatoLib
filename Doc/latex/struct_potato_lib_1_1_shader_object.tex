@@ -1,0 +1,120 @@
+\doxysection{Potato\+Lib\+::Shader\+Object 構造体}
+\hypertarget{struct_potato_lib_1_1_shader_object}{}\label{struct_potato_lib_1_1_shader_object}\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum class {\bfseries EStatus} \{ {\bfseries e\+Success}
+, {\bfseries e\+Create\+Fail}
+, {\bfseries e\+Compile\+Fail}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+EStatus \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a9ecdfb829df6a6c05dae4e238317ff68}{Setup}} (EShader\+Type a\+Shader\+Type, const char \texorpdfstring{$\ast$}{*}a\+Code)
+\item 
+EStatus \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a60667e673d78107af523ed75e8b748d2}{Create}} (EShader\+Type a\+Shader\+Type)
+\item 
+EStatus \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a164b4260ff0a26b5829434f7efc7bda9}{Compile}} (const char \texorpdfstring{$\ast$}{*}a\+Code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a8cf9afe0048be6adccd12e118f1d557e}{m\+Handle}} = 0u
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a60c8e433970aae8507185b9c2a9a94a9}{m\+Source\+Code}} = \"{}\"{}
+\item 
+EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060ba230e24cbd34e748ca4}{m\+Shader\+Type}} = EShader\+Type\+::e\+None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00007}{7}} 行目に定義があります。
+
+
+
+\doxysubsection{列挙型メンバ詳解}
+\Hypertarget{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}\label{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe} 
+\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!EStatus@{EStatus}}
+\index{EStatus@{EStatus}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection{\texorpdfstring{EStatus}{EStatus}}
+{\footnotesize\ttfamily enum class Potato\+Lib\+::\+Shader\+Object\+::\+EStatus\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00008}{8}} 行目に定義があります。
+
+
+
+\doxysubsection{関数詳解}
+\Hypertarget{struct_potato_lib_1_1_shader_object_a164b4260ff0a26b5829434f7efc7bda9}\label{struct_potato_lib_1_1_shader_object_a164b4260ff0a26b5829434f7efc7bda9} 
+\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!Compile@{Compile}}
+\index{Compile@{Compile}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection{\texorpdfstring{Compile()}{Compile()}}
+{\footnotesize\ttfamily Shader\+Object\+::\+EStatus Potato\+Lib\+::\+Shader\+Object\+::\+Compile (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
+
+
+
+ \mbox{\hyperlink{_shader_object_8cpp_source}{Shader\+Object.\+cpp}} の \mbox{\hyperlink{_shader_object_8cpp_source_l00044}{44}} 行目に定義があります。
+
+\Hypertarget{struct_potato_lib_1_1_shader_object_a60667e673d78107af523ed75e8b748d2}\label{struct_potato_lib_1_1_shader_object_a60667e673d78107af523ed75e8b748d2} 
+\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!Create@{Create}}
+\index{Create@{Create}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily Shader\+Object\+::\+EStatus Potato\+Lib\+::\+Shader\+Object\+::\+Create (\begin{DoxyParamCaption}\item[{EShader\+Type}]{a\+Shader\+Type }\end{DoxyParamCaption})}
+
+
+
+ \mbox{\hyperlink{_shader_object_8cpp_source}{Shader\+Object.\+cpp}} の \mbox{\hyperlink{_shader_object_8cpp_source_l00020}{20}} 行目に定義があります。
+
+\Hypertarget{struct_potato_lib_1_1_shader_object_a9ecdfb829df6a6c05dae4e238317ff68}\label{struct_potato_lib_1_1_shader_object_a9ecdfb829df6a6c05dae4e238317ff68} 
+\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!Setup@{Setup}}
+\index{Setup@{Setup}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily Shader\+Object\+::\+EStatus Potato\+Lib\+::\+Shader\+Object\+::\+Setup (\begin{DoxyParamCaption}\item[{EShader\+Type}]{a\+Shader\+Type,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
+
+
+
+ \mbox{\hyperlink{_shader_object_8cpp_source}{Shader\+Object.\+cpp}} の \mbox{\hyperlink{_shader_object_8cpp_source_l00009}{9}} 行目に定義があります。
+
+
+
+\doxysubsection{メンバ詳解}
+\Hypertarget{struct_potato_lib_1_1_shader_object_a8cf9afe0048be6adccd12e118f1d557e}\label{struct_potato_lib_1_1_shader_object_a8cf9afe0048be6adccd12e118f1d557e} 
+\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!mHandle@{mHandle}}
+\index{mHandle@{mHandle}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection{\texorpdfstring{mHandle}{mHandle}}
+{\footnotesize\ttfamily uint32\+\_\+t Potato\+Lib\+::\+Shader\+Object\+::m\+Handle = 0u}
+
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00014}{14}} 行目に定義があります。
+
+\Hypertarget{struct_potato_lib_1_1_shader_object_a75a9554e3060ba230e24cbd34e748ca4}\label{struct_potato_lib_1_1_shader_object_a75a9554e3060ba230e24cbd34e748ca4} 
+\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!mShaderType@{mShaderType}}
+\index{mShaderType@{mShaderType}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection{\texorpdfstring{mShaderType}{mShaderType}}
+{\footnotesize\ttfamily EShader\+Type Potato\+Lib\+::\+Shader\+Object\+::m\+Shader\+Type = EShader\+Type\+::e\+None}
+
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00016}{16}} 行目に定義があります。
+
+\Hypertarget{struct_potato_lib_1_1_shader_object_a60c8e433970aae8507185b9c2a9a94a9}\label{struct_potato_lib_1_1_shader_object_a60c8e433970aae8507185b9c2a9a94a9} 
+\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!mSourceCode@{mSourceCode}}
+\index{mSourceCode@{mSourceCode}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+\doxysubsubsection{\texorpdfstring{mSourceCode}{mSourceCode}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} Potato\+Lib\+::\+Shader\+Object\+::m\+Source\+Code = \"{}\"{}}
+
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00015}{15}} 行目に定義があります。
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Source/\+Render/\+Shader/Shader\+Object.\+h\item 
+Project/\+Source/\+Render/\+Shader/Shader\+Object.\+cpp\end{DoxyCompactItemize}

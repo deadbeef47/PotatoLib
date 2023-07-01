@@ -1,0 +1,74 @@
+\doxysection{Shader\+Object.\+cpp}
+\hypertarget{_shader_object_8cpp_source}{}\label{_shader_object_8cpp_source}\index{Project/Source/Render/Shader/ShaderObject.cpp@{Project/Source/Render/Shader/ShaderObject.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}ShaderObject.h"{}}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <GL\(\backslash\)glew.h>}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}Utility\(\backslash\)Log.h"{}}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}Utility\(\backslash\)Assert.h"{}}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00007}00007\ \textcolor{keyword}{namespace\ }PotatoLib\ \{}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00009}00009\ \ \ \ \ ShaderObject::EStatus\ ShaderObject::Setup(EShaderType\ aShaderType,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ aCode)\ \{}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ lCreateRes\ =\ Create(aShaderType);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lCreateRes\ !=\ EStatus::eSuccess)}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ lCreateRes;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ lCompileRes\ =\ Compile(aCode);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lCompileRes\ !=\ EStatus::eSuccess)}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ lCompileRes;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00018}00018\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00020}00020\ \ \ \ \ ShaderObject::EStatus\ ShaderObject::Create(EShaderType\ aShaderType)\ \{}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ Assert::Check(mHandle\ ==\ 0,\ \textcolor{stringliteral}{"{}シェーダーオブジェクトのハンドルが既に作成されています"{}});}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ GLenum\ lShaderType\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (aShaderType)\ \{}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ PotatoLib::EShaderType::eVertex:}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ lShaderType\ =\ GL\_VERTEX\_SHADER;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ PotatoLib::EShaderType::eFragment:}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ lShaderType\ =\ GL\_FRAGMENT\_SHADER;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ Assert::Check(\textcolor{stringliteral}{"{}想定外のEShaderTypeが指定されました"{}});}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ mHandle\ =\ glCreateShader(lShaderType);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mHandle\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ EStatus::eCreateFail;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ EStatus::eSuccess;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00042}00042\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00044}00044\ \ \ \ \ ShaderObject::EStatus\ ShaderObject::Compile(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ aCode)\ \{}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ mSourceCode\ =\ aCode;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ glShaderSource(mHandle,\ 1,\ \&mSourceCode,\ NULL);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ glCompileShader(mHandle);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ GLint\ lStatus\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ glGetShaderiv(mHandle,\ GL\_COMPILE\_STATUS,\ \&lStatus);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (GL\_FALSE\ !=\ lStatus)\ \textcolor{keywordflow}{return}\ EStatus::eSuccess;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ GLint\ lLogLength\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ glGetShaderiv(mHandle,\ GL\_INFO\_LOG\_LENGTH,\ \&lLogLength);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (0\ <=\ lLogLength)\ \textcolor{keywordflow}{return}\ EStatus::eSuccess;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ std::string\ lLog;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ glGetShaderInfoLog(mHandle,\ lLogLength,\ NULL,\ \&lLog[0]);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ Log::Show(\textcolor{stringliteral}{"{}Shader\ Compile\ Log\ :\ "{}},\ lLog);}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ EStatus::eCompileFail;}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00066}00066\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_shader_object_8cpp_source_l00068}00068\ \}}
+
+\end{DoxyCode}
