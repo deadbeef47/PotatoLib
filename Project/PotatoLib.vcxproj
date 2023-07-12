@@ -149,6 +149,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>.\Libraries\glfw\inc;.\Libraries\glew\inc;.\Libraries\glm\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -183,6 +184,10 @@
     <ClInclude Include="Source\Utility\Assert.h" />
     <ClInclude Include="Source\Utility\Log.h" />
     <ClInclude Include="Source\Utility\Singleton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GLSL\PolygonRender.frag" />
+    <None Include="GLSL\PolygonRender.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
