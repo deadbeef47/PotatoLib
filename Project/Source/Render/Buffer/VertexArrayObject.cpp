@@ -18,6 +18,10 @@ namespace PotatoLib {
 		if (mHandle == 0)
 			return EStatus::eCreateFail;
 
+		for (auto attribute : aBufferObject.mAttributes) {
+			mLocations.emplace_back(attribute.mLocation);
+		}
+
 		glBindVertexArray(mHandle);
 
 		aBufferObject.SetupAttribute();

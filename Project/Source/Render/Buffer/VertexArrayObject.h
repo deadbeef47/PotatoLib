@@ -14,6 +14,7 @@ namespace  PotatoLib{
 		};
 
 		uint32_t mHandle = 0u;
+		std::vector<int> mLocations;
 
 		EStatus Create(const BufferObject& aBufferObject);
 	};

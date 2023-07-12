@@ -31,7 +31,10 @@ namespace PotatoLib {
 
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mElementArrayObject.mHandle);
 
-		glEnableVertexAttribArray(0);
+		for (auto location : mVertexArrayObject.mLocations)
+		{
+			glEnableVertexAttribArray(location);
+		}
 
 		const auto lModelMatLoc = glGetUniformLocation(mProgramObject.mHandle, "aModel");
 		glUniformMatrix4fv(lModelMatLoc, 1, GL_FALSE, glm::value_ptr(aModelMatrix));
@@ -43,9 +46,12 @@ namespace PotatoLib {
 		glUniformMatrix4fv(lProjMatLoc, 1, GL_FALSE, glm::value_ptr(glm::perspective(glm::radians(65.0f), 4.0f / 3.0f, 0.1f, 1000.0f)));
 
 		//glDrawArrays(GL_TRIANGLES, 0, 9);
-		glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, reinterpret_cast<const GLvoid*>(0));
 
-		glDisableVertexAttribArray(0);
+		for (auto location : mVertexArrayObject.mLocations)
+		{
+			glDisableVertexAttribArray(location);
+		}
 
 		glBindVertexArray(0);
 
