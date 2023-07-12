@@ -84,4 +84,8 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="GLSL\PolygonRender.vert" />
+    <None Include="GLSL\PolygonRender.frag" />
+  </ItemGroup>
 </Project>

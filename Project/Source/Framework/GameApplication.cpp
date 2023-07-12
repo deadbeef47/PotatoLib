@@ -42,6 +42,8 @@ namespace PotatoLib {
 			return;
 		}
 
+		glEnable(GL_CULL_FACE);
+
 		Initialize();
 
 		while (!(glfwWindowShouldClose(lWindow.mHandle) | glfwGetKey(lWindow.mHandle, GLFW_KEY_ESCAPE))) {
@@ -50,7 +52,7 @@ namespace PotatoLib {
 
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-			glClearColor(0.0, 0.0, 0.0, 1.0);
+			glClearColor(0.5, 0.5, 0.5, 1.0);
 
 			Draw();
 

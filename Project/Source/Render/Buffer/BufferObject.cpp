@@ -33,12 +33,13 @@ namespace PotatoLib {
 			return aVal + aAttrib.mSize * sizeof(float);
 		});
 
+		uint32_t lOffset = 0;
 		for (int lIndex = 0; lIndex < mAttributes.size(); ++lIndex) {
 			const Attribute& lAttr = mAttributes[lIndex];
 			glEnableVertexAttribArray(lAttr.mLocation);
 
-			const uint32_t lOffset = lIndex * lAttr.mSize * sizeof(float);
 			glVertexAttribPointer(lAttr.mLocation, lAttr.mSize, GL_FLOAT, GL_FALSE, lStride, reinterpret_cast<void*>(lOffset));
+			lOffset += lAttr.mSize * sizeof(float);
 
 			glDisableVertexAttribArray(lAttr.mLocation);
 		}
