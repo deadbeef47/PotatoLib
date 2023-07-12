@@ -9,7 +9,7 @@ namespace PotatoLib {
 		GameApplication();
 		void Run();
 
-	private:
+	protected:
 		virtual void Initialize() {}
 		virtual void Update() {}
 		virtual void Draw() {}
