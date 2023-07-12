@@ -56,12 +56,14 @@ namespace PotatoLib {
 		GLint lLogLength = 0;
 		glGetShaderiv(mHandle, GL_INFO_LOG_LENGTH, &lLogLength);
 
-		if (0 <= lLogLength) return EStatus::eSuccess;
-
-		std::string lLog;
-		glGetShaderInfoLog(mHandle, lLogLength, NULL, &lLog[0]);
+		char* lLog = new char[lLogLength];
+		if (0 < lLogLength) {
+			glGetShaderInfoLog(mHandle, lLogLength, NULL, lLog);
+		}
 
 		Log::Show("Shader Compile Log : ", lLog);
+		delete[] lLog;
+
 		return EStatus::eCompileFail;
 	}
 

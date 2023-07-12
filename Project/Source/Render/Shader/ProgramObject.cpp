@@ -40,12 +40,14 @@ namespace PotatoLib {
 		GLint lLogLength = 0;
 		glGetProgramiv(mHandle, GL_INFO_LOG_LENGTH, &lLogLength);
 
-		if (0 <= lLogLength) return EStatus::eSuccess;
-
-		std::string lLog;
-		glGetProgramInfoLog(mHandle, lLogLength, NULL, &lLog[0]);
+		char* lLog = new char[lLogLength];
+		if (0 < lLogLength) {
+			glGetProgramInfoLog(mHandle, lLogLength, NULL, lLog);
+		}
 
 		Log::Show("Shader Link Log : ", lLog);
+		delete[] lLog;
+
 		return EStatus::eLinkFail;
 	}
 }
