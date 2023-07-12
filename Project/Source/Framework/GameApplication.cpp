@@ -42,6 +42,8 @@ namespace PotatoLib {
 			return;
 		}
 
+		glEnable(GL_CULL_FACE);
+
 		Initialize();
 
 		while (!(glfwWindowShouldClose(lWindow.mHandle) | glfwGetKey(lWindow.mHandle, GLFW_KEY_ESCAPE))) {
