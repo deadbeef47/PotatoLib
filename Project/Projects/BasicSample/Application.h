@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <Framework/GameApplication.h>
 #include <Framework/Type.h>
@@ -17,12 +17,12 @@ class Application : public PotatoLib::GameApplication
 protected:
 	void Initialize() override {
 
-		// ƒVƒF[ƒ_[ƒ[ƒh / ƒRƒ“ƒpƒCƒ‹ / ƒŠƒ“ƒN
+		// ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ãƒ­ãƒ¼ãƒ‰ / ã‚³ãƒ³ãƒ‘ã‚¤ãƒ« / ãƒªãƒ³ã‚¯
 		render.AddShader(PotatoLib::EShaderType::eVertex, GetShaderSource("GLSL/PolygonRender.vert").c_str());
 		render.AddShader(PotatoLib::EShaderType::eFragment, GetShaderSource("GLSL/PolygonRender.frag").c_str());
 		render.SetupProgram();
 
-		// ’¸“_ƒf[ƒ^ƒZƒbƒgƒAƒbƒv
+		// é ‚ç‚¹ãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—
 		PotatoLib::VertexIndexArray via{ 0, 1, 2 };
 		PotatoLib::VertexDataArray vda{
 			-0.5f, -((float)glm::sqrt(3) / 4.0f), 0.0f,  1.0f, 0.0f, 0.0f, 1.0f, // idx 0

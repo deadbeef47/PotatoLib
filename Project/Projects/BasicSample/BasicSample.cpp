@@ -1,5 +1,5 @@
-
-// Žg—pƒ‰ƒCƒuƒ‰ƒŠ
+ï»¿
+// ä½¿ç”¨ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
 // https://github.com/glfw/glfw
 #pragma comment(lib, "glfw3.lib")
 // https://github.com/nigels-com/glew
