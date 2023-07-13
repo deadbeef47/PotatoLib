@@ -170,7 +170,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PotatoLib.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
     <ClCompile Include="Source\Render\Buffer\BufferObject.cpp" />
     <ClCompile Include="Source\Render\Buffer\ElementArrayObject.cpp" />
