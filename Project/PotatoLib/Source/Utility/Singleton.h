@@ -1,10 +1,22 @@
+﻿/*****************************************************************//**
+ * \file   Singleton.h
+ * \brief  汎用シングルトンクラス
+ *********************************************************************/
 #pragma once
 
 #include <memory>
 
+/**
+ * @class Singleton.
+ * @brief 汎用シングルトンクラス
+ */
 template<typename T>
 class Singleton {
 public:
+	/**
+	 * @brief インスタンスゲッター.
+	 * \return インスタンス
+	 */
 	static std::shared_ptr<T> GetInstance() {
 		if (mInstance == nullptr) {
 			mInstance = std::make_shared<T>();
@@ -19,6 +31,7 @@ private:
     //Singleton& operator=(Singleton&&) = delete;
 
 private:
+	//! インスタンス
 	static std::shared_ptr<T> mInstance;
 };
 
