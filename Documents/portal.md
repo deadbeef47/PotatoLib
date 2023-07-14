@@ -1,5 +1,9 @@
 # PotatoLib ポータル {#mainpage}
 
+<div align="left">
+![](./logo/ptt.png)
+</div>
+
 ## フォルダ構成 概要
 ### Doc
 Doxygen生成のドキュメント
