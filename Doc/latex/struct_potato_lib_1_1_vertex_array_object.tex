@@ -1,28 +1,39 @@
 \doxysection{Potato\+Lib\+::Vertex\+Array\+Object 構造体}
 \hypertarget{struct_potato_lib_1_1_vertex_array_object}{}\label{struct_potato_lib_1_1_vertex_array_object}\index{PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}}
+
+
+VAO ラッピングクラス  
+
+
+
+
+{\ttfamily \#include $<$Vertex\+Array\+Object.\+h$>$}
+
 \doxysubsubsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
-enum class {\bfseries EStatus} \{ {\bfseries e\+Success}
-, {\bfseries e\+Create\+Fail}
+enum class \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31}{EStatus}} \{ \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31a27a410c6b361732f3b4237bff6478a44}{e\+Success}}
+, \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31a3672416286ea941c22e7d8bcd9edf359}{e\+Create\+Fail}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em エラーハンドリング用ステータス \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_ac6d447a6549acfeebc77c861af598900}{Create}} (const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&a\+Buffer\+Object)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_ac6d447a6549acfeebc77c861af598900}{Create}} (const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&a\+Buffer\+Object)
+\begin{DoxyCompactList}\small\item\em 頂点属性バッファオブジェクト作成. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_a07b784ab722c1156c79700c885dce780}{m\+Handle}} = 0u
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em VAO ハンドル \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_a373b57b7333ab9347092517ca08b5832}{m\+Locations}}
+\begin{DoxyCompactList}\small\item\em 頂点属性配列 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{詳解}
+VAO ラッピングクラス 
 
-
- \mbox{\hyperlink{_vertex_array_object_8h_source}{Vertex\+Array\+Object.\+h}} の \mbox{\hyperlink{_vertex_array_object_8h_source_l00009}{9}} 行目に定義があります。
+ \mbox{\hyperlink{_vertex_array_object_8h_source}{Vertex\+Array\+Object.\+h}} の \mbox{\hyperlink{_vertex_array_object_8h_source_l00017}{17}} 行目に定義があります。
 
 
 
@@ -31,11 +42,25 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_a07b784
 \index{PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}!EStatus@{EStatus}}
 \index{EStatus@{EStatus}!PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}}
 \doxysubsubsection{\texorpdfstring{EStatus}{EStatus}}
-{\footnotesize\ttfamily enum class Potato\+Lib\+::\+Vertex\+Array\+Object\+::\+EStatus\hspace{0.3cm}{\ttfamily [strong]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31}{Potato\+Lib\+::\+Vertex\+Array\+Object\+::\+EStatus}}\hspace{0.3cm}{\ttfamily [strong]}}
 
 
 
- \mbox{\hyperlink{_vertex_array_object_8h_source}{Vertex\+Array\+Object.\+h}} の \mbox{\hyperlink{_vertex_array_object_8h_source_l00011}{11}} 行目に定義があります。
+エラーハンドリング用ステータス 
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eSuccess@{eSuccess}!PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}}\index{PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}!eSuccess@{eSuccess}}}\Hypertarget{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31a27a410c6b361732f3b4237bff6478a44}\label{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31a27a410c6b361732f3b4237bff6478a44} 
+e\+Success&成功 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eCreateFail@{eCreateFail}!PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}}\index{PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}!eCreateFail@{eCreateFail}}}\Hypertarget{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31a3672416286ea941c22e7d8bcd9edf359}\label{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31a3672416286ea941c22e7d8bcd9edf359} 
+e\+Create\+Fail&オブジェクト作成失敗 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+ \mbox{\hyperlink{_vertex_array_object_8h_source}{Vertex\+Array\+Object.\+h}} の \mbox{\hyperlink{_vertex_array_object_8h_source_l00023}{23}} 行目に定義があります。
 
 
 
@@ -44,8 +69,20 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_a07b784
 \index{PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}!Create@{Create}}
 \index{Create@{Create}!PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}}
 \doxysubsubsection{\texorpdfstring{Create()}{Create()}}
-{\footnotesize\ttfamily Vertex\+Array\+Object\+::\+EStatus Potato\+Lib\+::\+Vertex\+Array\+Object\+::\+Create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&}]{a\+Buffer\+Object }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_abf9112a6367f148273d728c9fbd2fe31}{Vertex\+Array\+Object\+::\+EStatus}} Potato\+Lib\+::\+Vertex\+Array\+Object\+::\+Create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&}]{a\+Buffer\+Object }\end{DoxyParamCaption})}
 
+
+
+頂点属性バッファオブジェクト作成. 
+
+\doxylink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object} の内訳を決定し\+VAOを作成する 
+\begin{DoxyParams}{引数}
+{\em a\+Buffer\+Object} & 頂点バッファオブジェクト \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+エラーハンドリング用リザルト 
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_vertex_array_object_8cpp_source}{Vertex\+Array\+Object.\+cpp}} の \mbox{\hyperlink{_vertex_array_object_8cpp_source_l00011}{11}} 行目に定義があります。
@@ -61,11 +98,29 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_vertex_array_object_a07b784
 
 
 
- \mbox{\hyperlink{_vertex_array_object_8h_source}{Vertex\+Array\+Object.\+h}} の \mbox{\hyperlink{_vertex_array_object_8h_source_l00016}{16}} 行目に定義があります。
+VAO ハンドル 
+
+
+
+ \mbox{\hyperlink{_vertex_array_object_8h_source}{Vertex\+Array\+Object.\+h}} の \mbox{\hyperlink{_vertex_array_object_8h_source_l00031}{31}} 行目に定義があります。
+
+\Hypertarget{struct_potato_lib_1_1_vertex_array_object_a373b57b7333ab9347092517ca08b5832}\label{struct_potato_lib_1_1_vertex_array_object_a373b57b7333ab9347092517ca08b5832} 
+\index{PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}!mLocations@{mLocations}}
+\index{mLocations@{mLocations}!PotatoLib::VertexArrayObject@{PotatoLib::VertexArrayObject}}
+\doxysubsubsection{\texorpdfstring{mLocations}{mLocations}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Potato\+Lib\+::\+Vertex\+Array\+Object\+::m\+Locations}
+
+
+
+頂点属性配列 
+
+
+
+ \mbox{\hyperlink{_vertex_array_object_8h_source}{Vertex\+Array\+Object.\+h}} の \mbox{\hyperlink{_vertex_array_object_8h_source_l00033}{33}} 行目に定義があります。
 
 
 
 この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-Project/\+Source/\+Render/\+Buffer/Vertex\+Array\+Object.\+h\item 
-Project/\+Source/\+Render/\+Buffer/Vertex\+Array\+Object.\+cpp\end{DoxyCompactItemize}
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Buffer/\mbox{\hyperlink{_vertex_array_object_8h}{Vertex\+Array\+Object.\+h}}\item 
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Buffer/Vertex\+Array\+Object.\+cpp\end{DoxyCompactItemize}

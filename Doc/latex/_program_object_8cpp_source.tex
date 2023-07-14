@@ -1,57 +1,59 @@
 \doxysection{Program\+Object.\+cpp}
-\hypertarget{_program_object_8cpp_source}{}\label{_program_object_8cpp_source}\index{Project/Source/Render/Shader/ProgramObject.cpp@{Project/Source/Render/Shader/ProgramObject.cpp}}
+\hypertarget{_program_object_8cpp_source}{}\label{_program_object_8cpp_source}\index{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Shader/ProgramObject.cpp@{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Shader/ProgramObject.cpp}}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}ProgramObject.h"{}}}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_program_object_8h}{ProgramObject.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00002}00002\ }
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <GL\(\backslash\)glew.h>}}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00004}00004\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}Utility\(\backslash\)Log.h"{}}}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}Utility\(\backslash\)Assert.h"{}}}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}Render\(\backslash\)Shader\(\backslash\)ShaderObject.h"{}}}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_log_8h}{Utility\(\backslash\)Log.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_assert_8h}{Utility\(\backslash\)Assert.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shader_object_8h}{Render\(\backslash\)Shader\(\backslash\)ShaderObject.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00008}00008\ }
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00009}00009\ \textcolor{keyword}{namespace\ }PotatoLib\ \{}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00010}00010\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00011}00011\ \ \ \ \ ProgramObject::EStatus\ ProgramObject::Create()\ \{}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00011}\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ace5f2c5f6e82591268c2e0fa42428c2d}{00011}}\ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{ProgramObject::EStatus}}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ace5f2c5f6e82591268c2e0fa42428c2d}{ProgramObject::Create}}()\ \{}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00012}00012\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ Assert::Check(mHandle\ ==\ 0,\ \textcolor{stringliteral}{"{}„Éó„É≠„Ç∞„É©„É†„Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„ÅÆ„Éè„É≥„Éâ„É´„ÅåÊó¢„Å´‰ΩúÊàê„Åï„Çå„Å¶„ÅÑ„Åæ„Åô"{}});}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_assert_a4d14f2fda39f4c790227a6d368c6bb65}{Assert::Check}}(\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}}\ ==\ 0,\ \textcolor{stringliteral}{"{}ÉvÉçÉOÉâÉÄÉIÉuÉWÉFÉNÉgÇÃÉnÉìÉhÉãÇ™ä˘Ç…çÏê¨Ç≥ÇÍÇƒÇ¢Ç‹Ç∑"{}});}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ mHandle\ =\ glCreateProgram();}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}}\ =\ glCreateProgram();}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00016}00016\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mHandle\ ==\ 0)}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ EStatus::eCreateFail;}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}}\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359}{EStatus::eCreateFail}};}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00019}00019\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ EStatus::eSuccess;}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44}{EStatus::eSuccess}};}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00021}00021\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00022}00022\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00023}00023\ \ \ \ \ ProgramObject::EStatus\ ProgramObject::Attach(\textcolor{keyword}{const}\ ShaderObject\&\ aShaderObject)\ \{}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00023}\mbox{\hyperlink{struct_potato_lib_1_1_program_object_aa74c2d9eb626782e8b3b03c0c09f795d}{00023}}\ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{ProgramObject::EStatus}}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_aa74c2d9eb626782e8b3b03c0c09f795d}{ProgramObject::Attach}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_potato_lib_1_1_shader_object}{ShaderObject}}\&\ aShaderObject)\ \{}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00024}00024\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ Assert::Check(aShaderObject.mHandle\ !=\ 0,\ \textcolor{stringliteral}{"{}„Ç∑„Çß„Éº„ÉÄ„Éº„Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„ÅÆ„Éè„É≥„Éâ„É´„Åå‰ΩúÊàê„Åï„Çå„Å¶„ÅÑ„Åæ„Åõ„Çì"{}});}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_assert_a4d14f2fda39f4c790227a6d368c6bb65}{Assert::Check}}(aShaderObject.\mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a8cf9afe0048be6adccd12e118f1d557e}{mHandle}}\ !=\ 0,\ \textcolor{stringliteral}{"{}ÉVÉFÅ[É\_Å[ÉIÉuÉWÉFÉNÉgÇÃÉnÉìÉhÉãÇ™çÏê¨Ç≥ÇÍÇƒÇ¢Ç‹ÇπÇÒ"{}});}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00026}00026\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ glAttachShader(mHandle,\ aShaderObject.mHandle);}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ glAttachShader(\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}},\ aShaderObject.\mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a8cf9afe0048be6adccd12e118f1d557e}{mHandle}});}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00028}00028\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ EStatus::eSuccess;}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44}{EStatus::eSuccess}};}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00030}00030\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00031}00031\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00032}00032\ \ \ \ \ ProgramObject::EStatus\ ProgramObject::Link()\ \{}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00032}\mbox{\hyperlink{struct_potato_lib_1_1_program_object_a0c1d1664ba460f23ddf66421227bb5af}{00032}}\ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{ProgramObject::EStatus}}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_a0c1d1664ba460f23ddf66421227bb5af}{ProgramObject::Link}}()\ \{}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00033}00033\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ glLinkProgram(mHandle);}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ glLinkProgram(\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}});}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00035}00035\ }
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ GLint\ lStatus\ =\ 0;}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ glGetProgramiv(mHandle,\ GL\_LINK\_STATUS,\ \&lStatus);}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (GL\_FALSE\ !=\ lStatus)\ \textcolor{keywordflow}{return}\ EStatus::eSuccess;}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ glGetProgramiv(\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}},\ GL\_LINK\_STATUS,\ \&lStatus);}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (GL\_FALSE\ !=\ lStatus)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44}{EStatus::eSuccess}};}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00039}00039\ }
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ GLint\ lLogLength\ =\ 0;}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ glGetProgramiv(mHandle,\ GL\_INFO\_LOG\_LENGTH,\ \&lLogLength);}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ glGetProgramiv(\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}},\ GL\_INFO\_LOG\_LENGTH,\ \&lLogLength);}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00042}00042\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (0\ <=\ lLogLength)\ \textcolor{keywordflow}{return}\ EStatus::eSuccess;}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00044}00044\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ std::string\ lLog;}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ glGetProgramInfoLog(mHandle,\ lLogLength,\ NULL,\ \&lLog[0]);}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ lLog\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[lLogLength];}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (0\ <\ lLogLength)\ \{}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ glGetProgramInfoLog(\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{mHandle}},\ lLogLength,\ NULL,\ lLog);}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00047}00047\ }
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ Log::Show(\textcolor{stringliteral}{"{}Shader\ Link\ Log\ :\ "{}},\ lLog);}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ EStatus::eLinkFail;}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00050}00050\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_log_a3c9b7c51ddc3691b7a58c7120bd7ece9}{Log::Show}}(\textcolor{stringliteral}{"{}Shader\ Link\ Log\ :\ "{}},\ lLog);}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ lLog;}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85}{EStatus::eLinkFail}};}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00052}00052\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_program_object_8cpp_source_l00053}00053\ \}}
 
 \end{DoxyCode}

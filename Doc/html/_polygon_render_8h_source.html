@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PotatoLib: Project/Source/Render/PolygonRender.h ソースファイル</title>
+<title>PotatoLib: G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/PolygonRender.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -93,44 +93,57 @@ $(document).ready(function(){initNavTree('_polygon_render_8h_source.html',''); i
   <div class="headertitle"><div class="title">PolygonRender.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Shader\ProgramObject.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Shader\ShaderObject.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Buffer\VertexArrayObject.h&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Buffer\ElementArrayObject.h&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Buffer\BufferObject.h&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;glm\glm.hpp&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>PotatoLib {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_potato_lib_1_1_polygon_render.html">   12</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_potato_lib_1_1_polygon_render.html">PolygonRender</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">void</span> AddShader(EShaderType aShaderType, <span class="keyword">const</span> <span class="keywordtype">char</span>* aCode);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">void</span> SetupProgram();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">void</span> SetBuffer(<span class="keyword">const</span> VertexIndexArray&amp; aIndices, <span class="keyword">const</span> <a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object.html">BufferObject</a>&amp; aBufferObject);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">void</span> Draw(<span class="keyword">const</span> glm::mat4x4&amp; aModelMatrix);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_struct" href="struct_potato_lib_1_1_program_object.html">ProgramObject</a> mProgramObject;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="comment">//ShaderObject mVertexShader, mFragmentShader;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        std::vector&lt;ShaderObject&gt; mShaders;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_struct" href="struct_potato_lib_1_1_vertex_array_object.html">VertexArrayObject</a> mVertexArrayObject;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_struct" href="struct_potato_lib_1_1_element_array_object.html">ElementArrayObject</a> mElementArrayObject;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
-<div class="ttc" id="aclass_potato_lib_1_1_polygon_render_html"><div class="ttname"><a href="class_potato_lib_1_1_polygon_render.html">PotatoLib::PolygonRender</a></div><div class="ttdef"><b>Definition</b> <a href="_polygon_render_8h_source.html#l00012">PolygonRender.h:12</a></div></div>
-<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html">PotatoLib::BufferObject</a></div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00007">BufferObject.h:7</a></div></div>
-<div class="ttc" id="astruct_potato_lib_1_1_element_array_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_element_array_object.html">PotatoLib::ElementArrayObject</a></div><div class="ttdef"><b>Definition</b> <a href="_element_array_object_8h_source.html#l00007">ElementArrayObject.h:7</a></div></div>
-<div class="ttc" id="astruct_potato_lib_1_1_program_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html">PotatoLib::ProgramObject</a></div><div class="ttdef"><b>Definition</b> <a href="_program_object_8h_source.html#l00009">ProgramObject.h:9</a></div></div>
-<div class="ttc" id="astruct_potato_lib_1_1_vertex_array_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_vertex_array_object.html">PotatoLib::VertexArrayObject</a></div><div class="ttdef"><b>Definition</b> <a href="_vertex_array_object_8h_source.html#l00009">VertexArrayObject.h:9</a></div></div>
+<a href="_polygon_render_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_program_object_8h.html">Shader\ProgramObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_shader_object_8h.html">Shader\ShaderObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_vertex_array_object_8h.html">Buffer\VertexArrayObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_element_array_object_8h.html">Buffer\ElementArrayObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_buffer_object_8h.html">Buffer\BufferObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;glm\glm.hpp&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>PotatoLib {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_potato_lib_1_1_polygon_render.html">   20</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_potato_lib_1_1_polygon_render.html">PolygonRender</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_potato_lib_1_1_polygon_render.html#ab52983202ca749c831925a389f3120fc">AddShader</a>(<a class="code hl_enumeration" href="_type_8h.html#a151de26a03f4d8f83767e781965e6272">EShaderType</a> aShaderType, <span class="keyword">const</span> <span class="keywordtype">char</span>* aCode);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_potato_lib_1_1_polygon_render.html#a7452aa77030e80bd2647a30e81bddfc2">SetupProgram</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_potato_lib_1_1_polygon_render.html#ac3bce88c1978ead1599e461bedcc7f37">SetBuffer</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="_type_8h.html#a7397e17c43f3d193d97ac802db6da648">VertexIndexArray</a>&amp; aIndices, <span class="keyword">const</span> <a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object.html">BufferObject</a>&amp; aBufferObject);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_potato_lib_1_1_polygon_render.html#a6af4e86d14b97d82c4286b915ff2987c">Draw</a>(<span class="keyword">const</span> glm::mat4x4&amp; aModelMatrix);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_struct" href="struct_potato_lib_1_1_program_object.html">ProgramObject</a> mProgramObject;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        std::vector&lt;ShaderObject&gt; mShaders;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_struct" href="struct_potato_lib_1_1_vertex_array_object.html">VertexArrayObject</a> mVertexArrayObject;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_struct" href="struct_potato_lib_1_1_element_array_object.html">ElementArrayObject</a> mElementArrayObject;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    };</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="ttc" id="a_buffer_object_8h_html"><div class="ttname"><a href="_buffer_object_8h.html">BufferObject.h</a></div><div class="ttdoc">VBO ラッピングクラス</div></div>
+<div class="ttc" id="a_element_array_object_8h_html"><div class="ttname"><a href="_element_array_object_8h.html">ElementArrayObject.h</a></div><div class="ttdoc">頂点インデックスオブジェクト</div></div>
+<div class="ttc" id="a_program_object_8h_html"><div class="ttname"><a href="_program_object_8h.html">ProgramObject.h</a></div><div class="ttdoc">シェーダーステージ結合クラス</div></div>
+<div class="ttc" id="a_shader_object_8h_html"><div class="ttname"><a href="_shader_object_8h.html">ShaderObject.h</a></div><div class="ttdoc">シェーダーオブジェクトクラス</div></div>
+<div class="ttc" id="a_type_8h_html_a151de26a03f4d8f83767e781965e6272"><div class="ttname"><a href="_type_8h.html#a151de26a03f4d8f83767e781965e6272">PotatoLib::EShaderType</a></div><div class="ttdeci">EShaderType</div><div class="ttdoc">シェーダータイプ</div><div class="ttdef"><b>Definition</b> <a href="_type_8h_source.html#l00024">Type.h:24</a></div></div>
+<div class="ttc" id="a_type_8h_html_a7397e17c43f3d193d97ac802db6da648"><div class="ttname"><a href="_type_8h.html#a7397e17c43f3d193d97ac802db6da648">PotatoLib::VertexIndexArray</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; VertexIndexArray</div><div class="ttdoc">頂点インデックス配列型</div><div class="ttdef"><b>Definition</b> <a href="_type_8h_source.html#l00014">Type.h:14</a></div></div>
+<div class="ttc" id="a_vertex_array_object_8h_html"><div class="ttname"><a href="_vertex_array_object_8h.html">VertexArrayObject.h</a></div><div class="ttdoc">VAO ラッピングクラス</div></div>
+<div class="ttc" id="aclass_potato_lib_1_1_polygon_render_html"><div class="ttname"><a href="class_potato_lib_1_1_polygon_render.html">PotatoLib::PolygonRender</a></div><div class="ttdoc">ポリゴン描画</div><div class="ttdef"><b>Definition</b> <a href="_polygon_render_8h_source.html#l00020">PolygonRender.h:20</a></div></div>
+<div class="ttc" id="aclass_potato_lib_1_1_polygon_render_html_a6af4e86d14b97d82c4286b915ff2987c"><div class="ttname"><a href="class_potato_lib_1_1_polygon_render.html#a6af4e86d14b97d82c4286b915ff2987c">PotatoLib::PolygonRender::Draw</a></div><div class="ttdeci">void Draw(const glm::mat4x4 &amp;aModelMatrix)</div><div class="ttdoc">描画実行.</div><div class="ttdef"><b>Definition</b> <a href="_polygon_render_8cpp_source.html#l00027">PolygonRender.cpp:27</a></div></div>
+<div class="ttc" id="aclass_potato_lib_1_1_polygon_render_html_a7452aa77030e80bd2647a30e81bddfc2"><div class="ttname"><a href="class_potato_lib_1_1_polygon_render.html#a7452aa77030e80bd2647a30e81bddfc2">PotatoLib::PolygonRender::SetupProgram</a></div><div class="ttdeci">void SetupProgram()</div><div class="ttdoc">プログラムセットアップ.</div><div class="ttdef"><b>Definition</b> <a href="_polygon_render_8cpp_source.html#l00013">PolygonRender.cpp:13</a></div></div>
+<div class="ttc" id="aclass_potato_lib_1_1_polygon_render_html_ab52983202ca749c831925a389f3120fc"><div class="ttname"><a href="class_potato_lib_1_1_polygon_render.html#ab52983202ca749c831925a389f3120fc">PotatoLib::PolygonRender::AddShader</a></div><div class="ttdeci">void AddShader(EShaderType aShaderType, const char *aCode)</div><div class="ttdoc">各シェーダーステージ追加.</div><div class="ttdef"><b>Definition</b> <a href="_polygon_render_8cpp_source.html#l00007">PolygonRender.cpp:7</a></div></div>
+<div class="ttc" id="aclass_potato_lib_1_1_polygon_render_html_ac3bce88c1978ead1599e461bedcc7f37"><div class="ttname"><a href="class_potato_lib_1_1_polygon_render.html#ac3bce88c1978ead1599e461bedcc7f37">PotatoLib::PolygonRender::SetBuffer</a></div><div class="ttdeci">void SetBuffer(const VertexIndexArray &amp;aIndices, const BufferObject &amp;aBufferObject)</div><div class="ttdoc">頂点情報セット.</div><div class="ttdef"><b>Definition</b> <a href="_polygon_render_8cpp_source.html#l00022">PolygonRender.cpp:22</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html">PotatoLib::BufferObject</a></div><div class="ttdoc">VBO ラッピングクラス</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00015">BufferObject.h:15</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_element_array_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_element_array_object.html">PotatoLib::ElementArrayObject</a></div><div class="ttdoc">頂点インデックスオブジェクト</div><div class="ttdef"><b>Definition</b> <a href="_element_array_object_8h_source.html#l00015">ElementArrayObject.h:15</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html">PotatoLib::ProgramObject</a></div><div class="ttdoc">シェーダーステージ結合クラス</div><div class="ttdef"><b>Definition</b> <a href="_program_object_8h_source.html#l00017">ProgramObject.h:17</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_vertex_array_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_vertex_array_object.html">PotatoLib::VertexArrayObject</a></div><div class="ttdoc">VAO ラッピングクラス</div><div class="ttdef"><b>Definition</b> <a href="_vertex_array_object_8h_source.html#l00017">VertexArrayObject.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_0598e2f9d8cb32f037bce7e1a6f939ce.html">Source</a></li><li class="navelem"><a class="el" href="dir_23363cb32ef244da0521aa994d8b2776.html">Render</a></li><li class="navelem"><b>PolygonRender.h</b></li>
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_ee6abb1a8641b4917ca68aeb95f0e21e.html">Projects</a></li><li class="navelem"><a class="el" href="dir_4142c67eb999c1ccabb5b0e63db62c6e.html">PotatoLib</a></li><li class="navelem"><a class="el" href="dir_7309ff20c5798acd695f1578b297d69a.html">Source</a></li><li class="navelem"><a class="el" href="dir_b8ec33abf4c7461486a643570c1b9b69.html">Render</a></li><li class="navelem"><a class="el" href="_polygon_render_8h.html">PolygonRender.h</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PotatoLib: Project/Source/Render/Buffer/BufferObject.cpp ソースファイル</title>
+<title>PotatoLib: G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Buffer/BufferObject.cpp ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -93,60 +93,75 @@ $(document).ready(function(){initNavTree('_buffer_object_8cpp_source.html',''); 
   <div class="headertitle"><div class="title">BufferObject.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;BufferObject.h&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_buffer_object_8h.html">BufferObject.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GL\glew.h&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;numeric&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Utility\Assert.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_assert_8h.html">Utility\Assert.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>PotatoLib {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    BufferObject::EStatus BufferObject::Create(<span class="keyword">const</span> VertexDataArray&amp; aDataArray) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html#ad7f3ca56f332de32226adad2585f1fff">   11</a></span>    <a class="code hl_enumeration" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">BufferObject::EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_buffer_object.html#ad7f3ca56f332de32226adad2585f1fff">BufferObject::Create</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="_type_8h.html#a5aa941a828cfbfbca4898c79f64981cb">VertexDataArray</a>&amp; aDataArray) {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        Assert::Check(mHandle == 0, <span class="stringliteral">&quot;頂点バッファオブジェクトのハンドルが既に作成されています&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_function" href="class_potato_lib_1_1_assert.html#a4d14f2fda39f4c790227a6d368c6bb65">Assert::Check</a>(<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">mHandle</a> == 0, <span class="stringliteral">&quot;���_�o�b�t�@�I�u�W�F�N�g�̃n���h�������ɍ쐬����Ă��܂�&quot;</span>);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        glGenBuffers(1, &amp;mHandle);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        glBindBuffer(GL_ARRAY_BUFFER, mHandle);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        glGenBuffers(1, &amp;<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">mHandle</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        glBindBuffer(GL_ARRAY_BUFFER, <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">mHandle</a>);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        glBufferData(GL_ARRAY_BUFFER, aDataArray.size() * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), aDataArray.data(), GL_STATIC_DRAW);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> EStatus::eSuccess;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44">EStatus::eSuccess</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> BufferObject::PushAttribute(uint32_t aLocation, int32_t aSize) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        mAttributes.emplace_back(Attribute{ aLocation, aSize });</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html#ae8ec1980e7a25242ae14b6df66c78359">   25</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_potato_lib_1_1_buffer_object.html#ae8ec1980e7a25242ae14b6df66c78359">BufferObject::PushAttribute</a>(uint32_t aLocation, int32_t aSize) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">mAttributes</a>.emplace_back(<a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">Attribute</a>{ aLocation, aSize });</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> BufferObject::SetupAttribute()<span class="keyword">const </span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        glBindBuffer(GL_ARRAY_BUFFER, mHandle);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html#a171cf047dbe2cee629c3914684fa0e71">   29</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_potato_lib_1_1_buffer_object.html#a171cf047dbe2cee629c3914684fa0e71">BufferObject::SetupAttribute</a>()<span class="keyword">const </span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        glBindBuffer(GL_ARRAY_BUFFER, <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">mHandle</a>);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">const</span> <span class="keyword">auto</span> lStride = std::accumulate(mAttributes.begin(), mAttributes.end(), 0, [](int32_t aVal, Attribute aAttrib) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">const</span> <span class="keyword">auto</span> lStride = std::accumulate(<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">mAttributes</a>.begin(), <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">mAttributes</a>.end(), 0, [](int32_t aVal, <a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">Attribute</a> aAttrib) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            return aVal + aAttrib.mSize * sizeof(float);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        });</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            });</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lIndex = 0; lIndex &lt; mAttributes.size(); ++lIndex) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keyword">const</span> Attribute&amp; lAttr = mAttributes[lIndex];</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            glEnableVertexAttribArray(lAttr.mLocation);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keyword">const</span> uint32_t lOffset = lIndex * lAttr.mSize * <span class="keyword">sizeof</span>(float);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            glVertexAttribPointer(lAttr.mLocation, lAttr.mSize, GL_FLOAT, GL_FALSE, lStride, <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(lOffset));</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            glDisableVertexAttribArray(lAttr.mLocation);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        uint32_t lOffset = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lIndex = 0; lIndex &lt; <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">mAttributes</a>.size(); ++lIndex) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">Attribute</a>&amp; lAttr = <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">mAttributes</a>[lIndex];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            glEnableVertexAttribArray(lAttr.<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a60ff012d3081998567fe3772c4becf4a">mLocation</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            glVertexAttribPointer(lAttr.<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a60ff012d3081998567fe3772c4becf4a">mLocation</a>, lAttr.<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a8b9d946b56b7dfa5b515426c3228c944">mSize</a>, GL_FLOAT, GL_FALSE, lStride, <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(lOffset));</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            lOffset += lAttr.<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a8b9d946b56b7dfa5b515426c3228c944">mSize</a> * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            glDisableVertexAttribArray(lAttr.<a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a60ff012d3081998567fe3772c4becf4a">mLocation</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+<div class="ttc" id="a_assert_8h_html"><div class="ttname"><a href="_assert_8h.html">Assert.h</a></div><div class="ttdoc">汎用アサートクラス</div></div>
+<div class="ttc" id="a_buffer_object_8h_html"><div class="ttname"><a href="_buffer_object_8h.html">BufferObject.h</a></div><div class="ttdoc">VBO ラッピングクラス</div></div>
+<div class="ttc" id="a_type_8h_html_a5aa941a828cfbfbca4898c79f64981cb"><div class="ttname"><a href="_type_8h.html#a5aa941a828cfbfbca4898c79f64981cb">PotatoLib::VertexDataArray</a></div><div class="ttdeci">std::vector&lt; float &gt; VertexDataArray</div><div class="ttdoc">頂点データ配列型</div><div class="ttdef"><b>Definition</b> <a href="_type_8h_source.html#l00017">Type.h:17</a></div></div>
+<div class="ttc" id="aclass_potato_lib_1_1_assert_html_a4d14f2fda39f4c790227a6d368c6bb65"><div class="ttname"><a href="class_potato_lib_1_1_assert.html#a4d14f2fda39f4c790227a6d368c6bb65">PotatoLib::Assert::Check</a></div><div class="ttdeci">static void Check(const char *aMessage)</div><div class="ttdoc">アサート.</div><div class="ttdef"><b>Definition</b> <a href="_assert_8cpp_source.html#l00006">Assert.cpp:6</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_1_1_attribute_html"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">PotatoLib::BufferObject::Attribute</a></div><div class="ttdoc">頂点属性データ</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00032">BufferObject.h:32</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_1_1_attribute_html_a60ff012d3081998567fe3772c4becf4a"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a60ff012d3081998567fe3772c4becf4a">PotatoLib::BufferObject::Attribute::mLocation</a></div><div class="ttdeci">uint32_t mLocation</div><div class="ttdoc">属性ID</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00034">BufferObject.h:34</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_1_1_attribute_html_a8b9d946b56b7dfa5b515426c3228c944"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a8b9d946b56b7dfa5b515426c3228c944">PotatoLib::BufferObject::Attribute::mSize</a></div><div class="ttdeci">int32_t mSize</div><div class="ttdoc">要素数</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00036">BufferObject.h:36</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_a171cf047dbe2cee629c3914684fa0e71"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#a171cf047dbe2cee629c3914684fa0e71">PotatoLib::BufferObject::SetupAttribute</a></div><div class="ttdeci">void SetupAttribute() const</div><div class="ttdoc">頂点情報内訳FIX.</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8cpp_source.html#l00029">BufferObject.cpp:29</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_a9e4b9dab2c58101475494f154c1fc0cb"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">PotatoLib::BufferObject::EStatus</a></div><div class="ttdeci">EStatus</div><div class="ttdoc">エラーハンドリング用ステータス</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00021">BufferObject.h:21</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44">PotatoLib::BufferObject::EStatus::eSuccess</a></div><div class="ttdeci">@ eSuccess</div><div class="ttdoc">成功</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_aba27ea4bb361ff92f8af3dee104290fa"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">PotatoLib::BufferObject::mHandle</a></div><div class="ttdeci">uint32_t mHandle</div><div class="ttdoc">VBO ハンドル</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00040">BufferObject.h:40</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_abb483c06bd35c463bb16be397ee35bf1"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">PotatoLib::BufferObject::mAttributes</a></div><div class="ttdeci">std::vector&lt; Attribute &gt; mAttributes</div><div class="ttdoc">頂点属性データ配列</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00042">BufferObject.h:42</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_ad7f3ca56f332de32226adad2585f1fff"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#ad7f3ca56f332de32226adad2585f1fff">PotatoLib::BufferObject::Create</a></div><div class="ttdeci">EStatus Create(const VertexDataArray &amp;aDataArray)</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8cpp_source.html#l00011">BufferObject.cpp:11</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_ae8ec1980e7a25242ae14b6df66c78359"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#ae8ec1980e7a25242ae14b6df66c78359">PotatoLib::BufferObject::PushAttribute</a></div><div class="ttdeci">void PushAttribute(uint32_t aLocation, int32_t aSize)</div><div class="ttdoc">頂点属性を追加.</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8cpp_source.html#l00025">BufferObject.cpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_0598e2f9d8cb32f037bce7e1a6f939ce.html">Source</a></li><li class="navelem"><a class="el" href="dir_23363cb32ef244da0521aa994d8b2776.html">Render</a></li><li class="navelem"><a class="el" href="dir_f4386a71ac1ead2771516c83b817dd41.html">Buffer</a></li><li class="navelem"><b>BufferObject.cpp</b></li>
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_ee6abb1a8641b4917ca68aeb95f0e21e.html">Projects</a></li><li class="navelem"><a class="el" href="dir_4142c67eb999c1ccabb5b0e63db62c6e.html">PotatoLib</a></li><li class="navelem"><a class="el" href="dir_7309ff20c5798acd695f1578b297d69a.html">Source</a></li><li class="navelem"><a class="el" href="dir_b8ec33abf4c7461486a643570c1b9b69.html">Render</a></li><li class="navelem"><a class="el" href="dir_828838cf38f7a091c3e5b200b8509756.html">Buffer</a></li><li class="navelem"><b>BufferObject.cpp</b></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

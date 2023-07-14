@@ -1,37 +1,46 @@
 \doxysection{Potato\+Lib\+::Shader\+Object 構造体}
 \hypertarget{struct_potato_lib_1_1_shader_object}{}\label{struct_potato_lib_1_1_shader_object}\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
+
+
+シェーダーオブジェクトクラス  
+
+
+
+
+{\ttfamily \#include $<$Shader\+Object.\+h$>$}
+
 \doxysubsubsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
-enum class {\bfseries EStatus} \{ {\bfseries e\+Success}
-, {\bfseries e\+Create\+Fail}
-, {\bfseries e\+Compile\+Fail}
+enum class \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{EStatus}} \{ \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea27a410c6b361732f3b4237bff6478a44}{e\+Success}}
+, \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea3672416286ea941c22e7d8bcd9edf359}{e\+Create\+Fail}}
+, \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea916021e445ec298d86d48a8a58d0f0eb}{e\+Compile\+Fail}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em エラーハンドリング用ステータス \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a9ecdfb829df6a6c05dae4e238317ff68}{Setup}} (EShader\+Type a\+Shader\+Type, const char \texorpdfstring{$\ast$}{*}a\+Code)
-\item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a60667e673d78107af523ed75e8b748d2}{Create}} (EShader\+Type a\+Shader\+Type)
-\item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a164b4260ff0a26b5829434f7efc7bda9}{Compile}} (const char \texorpdfstring{$\ast$}{*}a\+Code)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a9ecdfb829df6a6c05dae4e238317ff68}{Setup}} (\mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}} a\+Shader\+Type, const char \texorpdfstring{$\ast$}{*}a\+Code)
+\begin{DoxyCompactList}\small\item\em シェーダーオブジェクトセットアップ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a60667e673d78107af523ed75e8b748d2}{Create}} (\mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}} a\+Shader\+Type)
+\begin{DoxyCompactList}\small\item\em シェーダーオブジェクト作成 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a164b4260ff0a26b5829434f7efc7bda9}{Compile}} (const char \texorpdfstring{$\ast$}{*}a\+Code)
+\begin{DoxyCompactList}\small\item\em シェーダーコンパイル. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a8cf9afe0048be6adccd12e118f1d557e}{m\+Handle}} = 0u
-\item 
+\begin{DoxyCompactList}\small\item\em シェーダーオブジェクトハンドル \end{DoxyCompactList}\item 
 const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a60c8e433970aae8507185b9c2a9a94a9}{m\+Source\+Code}} = \"{}\"{}
-\item 
-EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060ba230e24cbd34e748ca4}{m\+Shader\+Type}} = EShader\+Type\+::e\+None
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 該当シェーダーのソースコード \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}} \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060ba230e24cbd34e748ca4}{m\+Shader\+Type}} = \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272abe988781e4e1de1c6a36fb698afbbe1f}{EShader\+Type\+::e\+None}}
+\begin{DoxyCompactList}\small\item\em シェーダータイプ \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{詳解}
+シェーダーオブジェクトクラス 
 
-
- \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00007}{7}} 行目に定義があります。
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00015}{15}} 行目に定義があります。
 
 
 
@@ -40,11 +49,29 @@ EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060
 \index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!EStatus@{EStatus}}
 \index{EStatus@{EStatus}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
 \doxysubsubsection{\texorpdfstring{EStatus}{EStatus}}
-{\footnotesize\ttfamily enum class Potato\+Lib\+::\+Shader\+Object\+::\+EStatus\hspace{0.3cm}{\ttfamily [strong]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{Potato\+Lib\+::\+Shader\+Object\+::\+EStatus}}\hspace{0.3cm}{\ttfamily [strong]}}
 
 
 
- \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00008}{8}} 行目に定義があります。
+エラーハンドリング用ステータス 
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eSuccess@{eSuccess}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!eSuccess@{eSuccess}}}\Hypertarget{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea27a410c6b361732f3b4237bff6478a44}\label{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea27a410c6b361732f3b4237bff6478a44} 
+e\+Success&成功 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eCreateFail@{eCreateFail}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!eCreateFail@{eCreateFail}}}\Hypertarget{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea3672416286ea941c22e7d8bcd9edf359}\label{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea3672416286ea941c22e7d8bcd9edf359} 
+e\+Create\+Fail&オブジェクト作成失敗 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eCompileFail@{eCompileFail}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}\index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!eCompileFail@{eCompileFail}}}\Hypertarget{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea916021e445ec298d86d48a8a58d0f0eb}\label{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfea916021e445ec298d86d48a8a58d0f0eb} 
+e\+Compile\+Fail&コンパイル失敗 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00020}{20}} 行目に定義があります。
 
 
 
@@ -53,8 +80,20 @@ EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060
 \index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!Compile@{Compile}}
 \index{Compile@{Compile}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
 \doxysubsubsection{\texorpdfstring{Compile()}{Compile()}}
-{\footnotesize\ttfamily Shader\+Object\+::\+EStatus Potato\+Lib\+::\+Shader\+Object\+::\+Compile (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{Shader\+Object\+::\+EStatus}} Potato\+Lib\+::\+Shader\+Object\+::\+Compile (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
 
+
+
+シェーダーコンパイル. 
+
+
+\begin{DoxyParams}{引数}
+{\em a\+Code} & シェーダーソース \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+エラーハンドリング用リザルト 
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_shader_object_8cpp_source}{Shader\+Object.\+cpp}} の \mbox{\hyperlink{_shader_object_8cpp_source_l00044}{44}} 行目に定義があります。
@@ -63,8 +102,20 @@ EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060
 \index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!Create@{Create}}
 \index{Create@{Create}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
 \doxysubsubsection{\texorpdfstring{Create()}{Create()}}
-{\footnotesize\ttfamily Shader\+Object\+::\+EStatus Potato\+Lib\+::\+Shader\+Object\+::\+Create (\begin{DoxyParamCaption}\item[{EShader\+Type}]{a\+Shader\+Type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{Shader\+Object\+::\+EStatus}} Potato\+Lib\+::\+Shader\+Object\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}}}]{a\+Shader\+Type }\end{DoxyParamCaption})}
 
+
+
+シェーダーオブジェクト作成 
+
+
+\begin{DoxyParams}{引数}
+{\em a\+Shader\+Type} & シェーダータイプ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+エラーハンドリング用リザルト 
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_shader_object_8cpp_source}{Shader\+Object.\+cpp}} の \mbox{\hyperlink{_shader_object_8cpp_source_l00020}{20}} 行目に定義があります。
@@ -73,8 +124,22 @@ EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060
 \index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!Setup@{Setup}}
 \index{Setup@{Setup}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
 \doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
-{\footnotesize\ttfamily Shader\+Object\+::\+EStatus Potato\+Lib\+::\+Shader\+Object\+::\+Setup (\begin{DoxyParamCaption}\item[{EShader\+Type}]{a\+Shader\+Type,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a2a3a0eefeaf361c6b0b5be875f809bfe}{Shader\+Object\+::\+EStatus}} Potato\+Lib\+::\+Shader\+Object\+::\+Setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}}}]{a\+Shader\+Type,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
 
+
+
+シェーダーオブジェクトセットアップ. 
+
+シェーダーオブジェクト作成 → コンパイルを行う 
+\begin{DoxyParams}{引数}
+{\em a\+Shader\+Type} & シェーダータイプ \\
+\hline
+{\em a\+Code} & シェーダーソース \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_shader_object_8cpp_source}{Shader\+Object.\+cpp}} の \mbox{\hyperlink{_shader_object_8cpp_source_l00009}{9}} 行目に定義があります。
@@ -90,17 +155,25 @@ EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060
 
 
 
- \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00014}{14}} 行目に定義があります。
+シェーダーオブジェクトハンドル 
+
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00030}{30}} 行目に定義があります。
 
 \Hypertarget{struct_potato_lib_1_1_shader_object_a75a9554e3060ba230e24cbd34e748ca4}\label{struct_potato_lib_1_1_shader_object_a75a9554e3060ba230e24cbd34e748ca4} 
 \index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!mShaderType@{mShaderType}}
 \index{mShaderType@{mShaderType}!PotatoLib::ShaderObject@{PotatoLib::ShaderObject}}
 \doxysubsubsection{\texorpdfstring{mShaderType}{mShaderType}}
-{\footnotesize\ttfamily EShader\+Type Potato\+Lib\+::\+Shader\+Object\+::m\+Shader\+Type = EShader\+Type\+::e\+None}
+{\footnotesize\ttfamily \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}} Potato\+Lib\+::\+Shader\+Object\+::m\+Shader\+Type = \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272abe988781e4e1de1c6a36fb698afbbe1f}{EShader\+Type\+::e\+None}}}
 
 
 
- \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00016}{16}} 行目に定義があります。
+シェーダータイプ 
+
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00034}{34}} 行目に定義があります。
 
 \Hypertarget{struct_potato_lib_1_1_shader_object_a60c8e433970aae8507185b9c2a9a94a9}\label{struct_potato_lib_1_1_shader_object_a60c8e433970aae8507185b9c2a9a94a9} 
 \index{PotatoLib::ShaderObject@{PotatoLib::ShaderObject}!mSourceCode@{mSourceCode}}
@@ -110,11 +183,15 @@ EShader\+Type \mbox{\hyperlink{struct_potato_lib_1_1_shader_object_a75a9554e3060
 
 
 
- \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00015}{15}} 行目に定義があります。
+該当シェーダーのソースコード 
+
+
+
+ \mbox{\hyperlink{_shader_object_8h_source}{Shader\+Object.\+h}} の \mbox{\hyperlink{_shader_object_8h_source_l00032}{32}} 行目に定義があります。
 
 
 
 この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-Project/\+Source/\+Render/\+Shader/Shader\+Object.\+h\item 
-Project/\+Source/\+Render/\+Shader/Shader\+Object.\+cpp\end{DoxyCompactItemize}
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Shader/\mbox{\hyperlink{_shader_object_8h}{Shader\+Object.\+h}}\item 
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Shader/Shader\+Object.\+cpp\end{DoxyCompactItemize}

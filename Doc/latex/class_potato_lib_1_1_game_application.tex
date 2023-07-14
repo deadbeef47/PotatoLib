@@ -2,26 +2,44 @@
 \hypertarget{class_potato_lib_1_1_game_application}{}\label{class_potato_lib_1_1_game_application}\index{PotatoLib::GameApplication@{PotatoLib::GameApplication}}
 
 
+ゲームループ/イベント実行クラス  
+
+
+
+
 {\ttfamily \#include $<$Game\+Application.\+h$>$}
 
 \doxysubsubsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_potato_lib_1_1_game_application_a3303ba5dc318dc12c4354ad7b765630c}{Game\+Application}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_potato_lib_1_1_game_application_a3326931bf2fbd1aeaa913760629bd869}{Run}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em ループ開始 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_potato_lib_1_1_game_application_a7c5ed876a349d053a67982b1ee37dfc4}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em ゲームループ初期化 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_potato_lib_1_1_game_application_afea309d410f85d9a954b23e81ab015ed}{Update}} ()
+\begin{DoxyCompactList}\small\item\em ゲームループロジック更新 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_potato_lib_1_1_game_application_ad012d33464d0f7f06b3c8ced84647172}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em ゲームループ 描画更新 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_potato_lib_1_1_game_application_a1f5347bf86a511e1995386cee82350ba}{Finish}} ()
+\begin{DoxyCompactList}\small\item\em ゲームループ 終了処理 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{限定公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{class_potato_lib_1_1_game_application_a08a7b55569076f5fb5cd24fea25ad8e2}{m\+Major\+Version}}
-\item 
+\begin{DoxyCompactList}\small\item\em Open\+GL メジャーバージョン \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261644480d91f39}{m\+Minor\+Version}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Open\+GL マイナーバージョン \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{詳解}
-アプリケーション基底クラス 
+ゲームループ/イベント実行クラス 
 
- \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00009}{9}} 行目に定義があります。
+ \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00017}{17}} 行目に定義があります。
 
 
 
@@ -34,11 +52,57 @@ int \mbox{\hyperlink{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261
 
 
 
+コンストラクタ. 
+
+
+
  \mbox{\hyperlink{_game_application_8cpp_source}{Game\+Application.\+cpp}} の \mbox{\hyperlink{_game_application_8cpp_source_l00011}{11}} 行目に定義があります。
 
 
 
 \doxysubsection{関数詳解}
+\Hypertarget{class_potato_lib_1_1_game_application_ad012d33464d0f7f06b3c8ced84647172}\label{class_potato_lib_1_1_game_application_ad012d33464d0f7f06b3c8ced84647172} 
+\index{PotatoLib::GameApplication@{PotatoLib::GameApplication}!Draw@{Draw}}
+\index{Draw@{Draw}!PotatoLib::GameApplication@{PotatoLib::GameApplication}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual void Potato\+Lib\+::\+Game\+Application\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ゲームループ 描画更新 
+
+ゲームループ 描画更新 (ユーザー拡張可). 
+
+ \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00044}{44}} 行目に定義があります。
+
+\Hypertarget{class_potato_lib_1_1_game_application_a1f5347bf86a511e1995386cee82350ba}\label{class_potato_lib_1_1_game_application_a1f5347bf86a511e1995386cee82350ba} 
+\index{PotatoLib::GameApplication@{PotatoLib::GameApplication}!Finish@{Finish}}
+\index{Finish@{Finish}!PotatoLib::GameApplication@{PotatoLib::GameApplication}}
+\doxysubsubsection{\texorpdfstring{Finish()}{Finish()}}
+{\footnotesize\ttfamily virtual void Potato\+Lib\+::\+Game\+Application\+::\+Finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ゲームループ 終了処理 
+
+ゲームループ 終了処理 (ユーザー拡張可). 
+
+ \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00049}{49}} 行目に定義があります。
+
+\Hypertarget{class_potato_lib_1_1_game_application_a7c5ed876a349d053a67982b1ee37dfc4}\label{class_potato_lib_1_1_game_application_a7c5ed876a349d053a67982b1ee37dfc4} 
+\index{PotatoLib::GameApplication@{PotatoLib::GameApplication}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!PotatoLib::GameApplication@{PotatoLib::GameApplication}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily virtual void Potato\+Lib\+::\+Game\+Application\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ゲームループ初期化 
+
+ゲームループ初期化 (ユーザー拡張可) 
+
+ \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00034}{34}} 行目に定義があります。
+
 \Hypertarget{class_potato_lib_1_1_game_application_a3326931bf2fbd1aeaa913760629bd869}\label{class_potato_lib_1_1_game_application_a3326931bf2fbd1aeaa913760629bd869} 
 \index{PotatoLib::GameApplication@{PotatoLib::GameApplication}!Run@{Run}}
 \index{Run@{Run}!PotatoLib::GameApplication@{PotatoLib::GameApplication}}
@@ -47,7 +111,25 @@ int \mbox{\hyperlink{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261
 
 
 
+ループ開始 
+
+
+
  \mbox{\hyperlink{_game_application_8cpp_source}{Game\+Application.\+cpp}} の \mbox{\hyperlink{_game_application_8cpp_source_l00015}{15}} 行目に定義があります。
+
+\Hypertarget{class_potato_lib_1_1_game_application_afea309d410f85d9a954b23e81ab015ed}\label{class_potato_lib_1_1_game_application_afea309d410f85d9a954b23e81ab015ed} 
+\index{PotatoLib::GameApplication@{PotatoLib::GameApplication}!Update@{Update}}
+\index{Update@{Update}!PotatoLib::GameApplication@{PotatoLib::GameApplication}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Potato\+Lib\+::\+Game\+Application\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ゲームループロジック更新 
+
+ゲームループ ロジック更新 (ユーザー拡張可). 
+
+ \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00039}{39}} 行目に定義があります。
 
 
 
@@ -60,7 +142,11 @@ int \mbox{\hyperlink{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261
 
 
 
- \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00021}{21}} 行目に定義があります。
+Open\+GL メジャーバージョン 
+
+
+
+ \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00053}{53}} 行目に定義があります。
 
 \Hypertarget{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261644480d91f39}\label{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261644480d91f39} 
 \index{PotatoLib::GameApplication@{PotatoLib::GameApplication}!mMinorVersion@{mMinorVersion}}
@@ -70,11 +156,15 @@ int \mbox{\hyperlink{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261
 
 
 
- \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00021}{21}} 行目に定義があります。
+Open\+GL マイナーバージョン 
+
+
+
+ \mbox{\hyperlink{_game_application_8h_source}{Game\+Application.\+h}} の \mbox{\hyperlink{_game_application_8h_source_l00055}{55}} 行目に定義があります。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-Project/\+Source/\+Framework/Game\+Application.\+h\item 
-Project/\+Source/\+Framework/Game\+Application.\+cpp\end{DoxyCompactItemize}
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Framework/\mbox{\hyperlink{_game_application_8h}{Game\+Application.\+h}}\item 
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Framework/Game\+Application.\+cpp\end{DoxyCompactItemize}

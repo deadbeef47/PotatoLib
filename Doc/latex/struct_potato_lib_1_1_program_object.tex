@@ -1,33 +1,42 @@
 \doxysection{Potato\+Lib\+::Program\+Object 構造体}
 \hypertarget{struct_potato_lib_1_1_program_object}{}\label{struct_potato_lib_1_1_program_object}\index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}
+
+
+シェーダーステージ結合クラス  
+
+
+
+
+{\ttfamily \#include $<$Program\+Object.\+h$>$}
+
 \doxysubsubsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
-enum class {\bfseries EStatus} \{ {\bfseries e\+Success}
-, {\bfseries e\+Create\+Fail}
-, {\bfseries e\+Link\+Fail}
+enum class \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{EStatus}} \{ \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44}{e\+Success}}
+, \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359}{e\+Create\+Fail}}
+, \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85}{e\+Link\+Fail}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em エラーハンドリング用ステータス \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ace5f2c5f6e82591268c2e0fa42428c2d}{Create}} ()
-\item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_program_object_aa74c2d9eb626782e8b3b03c0c09f795d}{Attach}} (const \mbox{\hyperlink{struct_potato_lib_1_1_shader_object}{Shader\+Object}} \&a\+Shader\+Object)
-\item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_program_object_a0c1d1664ba460f23ddf66421227bb5af}{Link}} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ace5f2c5f6e82591268c2e0fa42428c2d}{Create}} ()
+\begin{DoxyCompactList}\small\item\em プログラムオブジェクト作成 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_program_object_aa74c2d9eb626782e8b3b03c0c09f795d}{Attach}} (const \mbox{\hyperlink{struct_potato_lib_1_1_shader_object}{Shader\+Object}} \&a\+Shader\+Object)
+\begin{DoxyCompactList}\small\item\em アタッチするシェーダーオブジェクト指定. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_program_object_a0c1d1664ba460f23ddf66421227bb5af}{Link}} ()
+\begin{DoxyCompactList}\small\item\em 各シェーダーステージをリンク. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7}{m\+Handle}} = 0u
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em プログラムハンドル \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{詳解}
+シェーダーステージ結合クラス 
 
-
- \mbox{\hyperlink{_program_object_8h_source}{Program\+Object.\+h}} の \mbox{\hyperlink{_program_object_8h_source_l00009}{9}} 行目に定義があります。
+ \mbox{\hyperlink{_program_object_8h_source}{Program\+Object.\+h}} の \mbox{\hyperlink{_program_object_8h_source_l00017}{17}} 行目に定義があります。
 
 
 
@@ -36,11 +45,29 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8f
 \index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}!EStatus@{EStatus}}
 \index{EStatus@{EStatus}!PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}
 \doxysubsubsection{\texorpdfstring{EStatus}{EStatus}}
-{\footnotesize\ttfamily enum class Potato\+Lib\+::\+Program\+Object\+::\+EStatus\hspace{0.3cm}{\ttfamily [strong]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{Potato\+Lib\+::\+Program\+Object\+::\+EStatus}}\hspace{0.3cm}{\ttfamily [strong]}}
 
 
 
- \mbox{\hyperlink{_program_object_8h_source}{Program\+Object.\+h}} の \mbox{\hyperlink{_program_object_8h_source_l00010}{10}} 行目に定義があります。
+エラーハンドリング用ステータス 
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eSuccess@{eSuccess}!PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}\index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}!eSuccess@{eSuccess}}}\Hypertarget{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44}\label{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44} 
+e\+Success&成功 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eCreateFail@{eCreateFail}!PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}\index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}!eCreateFail@{eCreateFail}}}\Hypertarget{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359}\label{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359} 
+e\+Create\+Fail&オブジェクト作成失敗 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eLinkFail@{eLinkFail}!PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}\index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}!eLinkFail@{eLinkFail}}}\Hypertarget{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85}\label{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85} 
+e\+Link\+Fail&リンク失敗 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+ \mbox{\hyperlink{_program_object_8h_source}{Program\+Object.\+h}} の \mbox{\hyperlink{_program_object_8h_source_l00022}{22}} 行目に定義があります。
 
 
 
@@ -49,8 +76,20 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8f
 \index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}!Attach@{Attach}}
 \index{Attach@{Attach}!PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}
 \doxysubsubsection{\texorpdfstring{Attach()}{Attach()}}
-{\footnotesize\ttfamily Program\+Object\+::\+EStatus Potato\+Lib\+::\+Program\+Object\+::\+Attach (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_potato_lib_1_1_shader_object}{Shader\+Object}} \&}]{a\+Shader\+Object }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{Program\+Object\+::\+EStatus}} Potato\+Lib\+::\+Program\+Object\+::\+Attach (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_potato_lib_1_1_shader_object}{Shader\+Object}} \&}]{a\+Shader\+Object }\end{DoxyParamCaption})}
 
+
+
+アタッチするシェーダーオブジェクト指定. 
+
+
+\begin{DoxyParams}{引数}
+{\em a\+Shader\+Object} & 対象シェーダーオブジェクト \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+エラーハンドリング用リザルト 
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_program_object_8cpp_source}{Program\+Object.\+cpp}} の \mbox{\hyperlink{_program_object_8cpp_source_l00023}{23}} 行目に定義があります。
@@ -59,8 +98,15 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8f
 \index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}!Create@{Create}}
 \index{Create@{Create}!PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}
 \doxysubsubsection{\texorpdfstring{Create()}{Create()}}
-{\footnotesize\ttfamily Program\+Object\+::\+EStatus Potato\+Lib\+::\+Program\+Object\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{Program\+Object\+::\+EStatus}} Potato\+Lib\+::\+Program\+Object\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+プログラムオブジェクト作成 
+
+\begin{DoxyReturn}{戻り値}
+エラーハンドリング用リザルト 
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_program_object_8cpp_source}{Program\+Object.\+cpp}} の \mbox{\hyperlink{_program_object_8cpp_source_l00011}{11}} 行目に定義があります。
@@ -69,8 +115,15 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8f
 \index{PotatoLib::ProgramObject@{PotatoLib::ProgramObject}!Link@{Link}}
 \index{Link@{Link}!PotatoLib::ProgramObject@{PotatoLib::ProgramObject}}
 \doxysubsubsection{\texorpdfstring{Link()}{Link()}}
-{\footnotesize\ttfamily Program\+Object\+::\+EStatus Potato\+Lib\+::\+Program\+Object\+::\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac38970c310fe84d1b1fe823a2217cead}{Program\+Object\+::\+EStatus}} Potato\+Lib\+::\+Program\+Object\+::\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+各シェーダーステージをリンク. 
+
+\begin{DoxyReturn}{戻り値}
+エラーハンドリング用リザルト 
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_program_object_8cpp_source}{Program\+Object.\+cpp}} の \mbox{\hyperlink{_program_object_8cpp_source_l00032}{32}} 行目に定義があります。
@@ -86,11 +139,15 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_program_object_ac9fb517ef8f
 
 
 
- \mbox{\hyperlink{_program_object_8h_source}{Program\+Object.\+h}} の \mbox{\hyperlink{_program_object_8h_source_l00016}{16}} 行目に定義があります。
+プログラムハンドル 
+
+
+
+ \mbox{\hyperlink{_program_object_8h_source}{Program\+Object.\+h}} の \mbox{\hyperlink{_program_object_8h_source_l00032}{32}} 行目に定義があります。
 
 
 
 この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-Project/\+Source/\+Render/\+Shader/Program\+Object.\+h\item 
-Project/\+Source/\+Render/\+Shader/Program\+Object.\+cpp\end{DoxyCompactItemize}
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Shader/\mbox{\hyperlink{_program_object_8h}{Program\+Object.\+h}}\item 
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Shader/Program\+Object.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\doxysection{G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Framework/\+Type.h ファイル}
+\hypertarget{_type_8h}{}\label{_type_8h}\index{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/Type.h@{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/Type.h}}
+
+
+汎用型宣言用ファイル  
+
+
+{\ttfamily \#include $<$cinttypes$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{_type_8h_a7397e17c43f3d193d97ac802db6da648}{Potato\+Lib\+::\+Vertex\+Index\+Array}} = std\+::vector$<$ uint32\+\_\+t $>$
+\begin{DoxyCompactList}\small\item\em 頂点インデックス配列型 \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{_type_8h_a5aa941a828cfbfbca4898c79f64981cb}{Potato\+Lib\+::\+Vertex\+Data\+Array}} = std\+::vector$<$ float $>$
+\begin{DoxyCompactList}\small\item\em 頂点データ配列型 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{Potato\+Lib\+::\+EShader\+Type}} \{ \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272abe988781e4e1de1c6a36fb698afbbe1f}{e\+None}}
+, \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272ab1824726e740f774caa68bcd14ac7374}{e\+Vertex}}
+, \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272aacc520cee8e0a81ebdb57bab758a4453}{e\+Fragment}}
+ \}
+\begin{DoxyCompactList}\small\item\em シェーダータイプ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+汎用型宣言用ファイル 
+
+
+
+ \mbox{\hyperlink{_type_8h_source}{Type.\+h}} に定義があります。
+
+
+
+\doxysubsection{型定義詳解}
+\Hypertarget{_type_8h_a5aa941a828cfbfbca4898c79f64981cb}\label{_type_8h_a5aa941a828cfbfbca4898c79f64981cb} 
+\index{Type.h@{Type.h}!VertexDataArray@{VertexDataArray}}
+\index{VertexDataArray@{VertexDataArray}!Type.h@{Type.h}}
+\doxysubsubsection{\texorpdfstring{VertexDataArray}{VertexDataArray}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_type_8h_a5aa941a828cfbfbca4898c79f64981cb}{Potato\+Lib\+::\+Vertex\+Data\+Array}} = typedef std\+::vector$<$float$>$}
+
+
+
+頂点データ配列型 
+
+
+
+ \mbox{\hyperlink{_type_8h_source}{Type.\+h}} の \mbox{\hyperlink{_type_8h_source_l00017}{17}} 行目に定義があります。
+
+\Hypertarget{_type_8h_a7397e17c43f3d193d97ac802db6da648}\label{_type_8h_a7397e17c43f3d193d97ac802db6da648} 
+\index{Type.h@{Type.h}!VertexIndexArray@{VertexIndexArray}}
+\index{VertexIndexArray@{VertexIndexArray}!Type.h@{Type.h}}
+\doxysubsubsection{\texorpdfstring{VertexIndexArray}{VertexIndexArray}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_type_8h_a7397e17c43f3d193d97ac802db6da648}{Potato\+Lib\+::\+Vertex\+Index\+Array}} = typedef std\+::vector$<$uint32\+\_\+t$>$}
+
+
+
+頂点インデックス配列型 
+
+
+
+ \mbox{\hyperlink{_type_8h_source}{Type.\+h}} の \mbox{\hyperlink{_type_8h_source_l00014}{14}} 行目に定義があります。
+
+
+
+\doxysubsection{列挙型詳解}
+\Hypertarget{_type_8h_a151de26a03f4d8f83767e781965e6272}\label{_type_8h_a151de26a03f4d8f83767e781965e6272} 
+\index{Type.h@{Type.h}!EShaderType@{EShaderType}}
+\index{EShaderType@{EShaderType}!Type.h@{Type.h}}
+\doxysubsubsection{\texorpdfstring{EShaderType}{EShaderType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{Potato\+Lib\+::\+EShader\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+シェーダータイプ 
+
+Shaderコンパイル時の識別として使用する \begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eNone@{eNone}!Type.h@{Type.h}}\index{Type.h@{Type.h}!eNone@{eNone}}}\Hypertarget{_type_8h_a151de26a03f4d8f83767e781965e6272abe988781e4e1de1c6a36fb698afbbe1f}\label{_type_8h_a151de26a03f4d8f83767e781965e6272abe988781e4e1de1c6a36fb698afbbe1f} 
+e\+None&指定なし(例外処理用) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eVertex@{eVertex}!Type.h@{Type.h}}\index{Type.h@{Type.h}!eVertex@{eVertex}}}\Hypertarget{_type_8h_a151de26a03f4d8f83767e781965e6272ab1824726e740f774caa68bcd14ac7374}\label{_type_8h_a151de26a03f4d8f83767e781965e6272ab1824726e740f774caa68bcd14ac7374} 
+e\+Vertex&頂点シェーダー \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eFragment@{eFragment}!Type.h@{Type.h}}\index{Type.h@{Type.h}!eFragment@{eFragment}}}\Hypertarget{_type_8h_a151de26a03f4d8f83767e781965e6272aacc520cee8e0a81ebdb57bab758a4453}\label{_type_8h_a151de26a03f4d8f83767e781965e6272aacc520cee8e0a81ebdb57bab758a4453} 
+e\+Fragment&フラグメントシェーダー \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+ \mbox{\hyperlink{_type_8h_source}{Type.\+h}} の \mbox{\hyperlink{_type_8h_source_l00024}{24}} 行目に定義があります。
+

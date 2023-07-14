@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PotatoLib: Project/Source/Render/Buffer/BufferObject.h ソースファイル</title>
+<title>PotatoLib: G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Buffer/BufferObject.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -93,42 +93,57 @@ $(document).ready(function(){initNavTree('_buffer_object_8h_source.html',''); in
   <div class="headertitle"><div class="title">BufferObject.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Framework\Type.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>PotatoLib {</div>
+<a href="_buffer_object_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html">    7</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object.html">BufferObject</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keyword">enum class</span> EStatus {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            eSuccess,</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            eCreateFail,</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        };</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">   13</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">Attribute</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            uint32_t mLocation = 0u;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            int32_t mSize = 0;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        };</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        uint32_t mHandle = 0u;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::vector&lt;Attribute&gt; mAttributes;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        EStatus Create(<span class="keyword">const</span> VertexDataArray&amp; aDataArray);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">void</span> PushAttribute(uint32_t aLocation, int32_t aSize);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> SetupAttribute()<span class="keyword">const</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_type_8h.html">Framework\Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>PotatoLib {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html">   15</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object.html">BufferObject</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">   21</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">EStatus</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44">eSuccess</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba3672416286ea941c22e7d8bcd9edf359">eCreateFail</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        };</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
-<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_1_1_attribute_html"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">PotatoLib::BufferObject::Attribute</a></div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00013">BufferObject.h:13</a></div></div>
-<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html">PotatoLib::BufferObject</a></div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00007">BufferObject.h:7</a></div></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">   32</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">Attribute</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a60ff012d3081998567fe3772c4becf4a">   34</a></span>            uint32_t <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a60ff012d3081998567fe3772c4becf4a">mLocation</a> = 0u;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a8b9d946b56b7dfa5b515426c3228c944">   36</a></span>            int32_t <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a8b9d946b56b7dfa5b515426c3228c944">mSize</a> = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        };</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">   40</a></span>        uint32_t <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">mHandle</a> = 0u;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">   42</a></span>        std::vector&lt;Attribute&gt; <a class="code hl_variable" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">mAttributes</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_enumeration" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_buffer_object.html#ad7f3ca56f332de32226adad2585f1fff">Create</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="_type_8h.html#a5aa941a828cfbfbca4898c79f64981cb">VertexDataArray</a>&amp; aDataArray);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="struct_potato_lib_1_1_buffer_object.html#ae8ec1980e7a25242ae14b6df66c78359">PushAttribute</a>(uint32_t aLocation, int32_t aSize);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="struct_potato_lib_1_1_buffer_object.html#a171cf047dbe2cee629c3914684fa0e71">SetupAttribute</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    };</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="ttc" id="a_type_8h_html"><div class="ttname"><a href="_type_8h.html">Type.h</a></div><div class="ttdoc">汎用型宣言用ファイル</div></div>
+<div class="ttc" id="a_type_8h_html_a5aa941a828cfbfbca4898c79f64981cb"><div class="ttname"><a href="_type_8h.html#a5aa941a828cfbfbca4898c79f64981cb">PotatoLib::VertexDataArray</a></div><div class="ttdeci">std::vector&lt; float &gt; VertexDataArray</div><div class="ttdoc">頂点データ配列型</div><div class="ttdef"><b>Definition</b> <a href="_type_8h_source.html#l00017">Type.h:17</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_1_1_attribute_html"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">PotatoLib::BufferObject::Attribute</a></div><div class="ttdoc">頂点属性データ</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00032">BufferObject.h:32</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_1_1_attribute_html_a60ff012d3081998567fe3772c4becf4a"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a60ff012d3081998567fe3772c4becf4a">PotatoLib::BufferObject::Attribute::mLocation</a></div><div class="ttdeci">uint32_t mLocation</div><div class="ttdoc">属性ID</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00034">BufferObject.h:34</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_1_1_attribute_html_a8b9d946b56b7dfa5b515426c3228c944"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#a8b9d946b56b7dfa5b515426c3228c944">PotatoLib::BufferObject::Attribute::mSize</a></div><div class="ttdeci">int32_t mSize</div><div class="ttdoc">要素数</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00036">BufferObject.h:36</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html">PotatoLib::BufferObject</a></div><div class="ttdoc">VBO ラッピングクラス</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00015">BufferObject.h:15</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_a171cf047dbe2cee629c3914684fa0e71"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#a171cf047dbe2cee629c3914684fa0e71">PotatoLib::BufferObject::SetupAttribute</a></div><div class="ttdeci">void SetupAttribute() const</div><div class="ttdoc">頂点情報内訳FIX.</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8cpp_source.html#l00029">BufferObject.cpp:29</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_a9e4b9dab2c58101475494f154c1fc0cb"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">PotatoLib::BufferObject::EStatus</a></div><div class="ttdeci">EStatus</div><div class="ttdoc">エラーハンドリング用ステータス</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00021">BufferObject.h:21</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44">PotatoLib::BufferObject::EStatus::eSuccess</a></div><div class="ttdeci">@ eSuccess</div><div class="ttdoc">成功</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_a9e4b9dab2c58101475494f154c1fc0cba3672416286ea941c22e7d8bcd9edf359"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba3672416286ea941c22e7d8bcd9edf359">PotatoLib::BufferObject::EStatus::eCreateFail</a></div><div class="ttdeci">@ eCreateFail</div><div class="ttdoc">オブジェクト作成失敗</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_aba27ea4bb361ff92f8af3dee104290fa"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">PotatoLib::BufferObject::mHandle</a></div><div class="ttdeci">uint32_t mHandle</div><div class="ttdoc">VBO ハンドル</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00040">BufferObject.h:40</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_abb483c06bd35c463bb16be397ee35bf1"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">PotatoLib::BufferObject::mAttributes</a></div><div class="ttdeci">std::vector&lt; Attribute &gt; mAttributes</div><div class="ttdoc">頂点属性データ配列</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8h_source.html#l00042">BufferObject.h:42</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_ad7f3ca56f332de32226adad2585f1fff"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#ad7f3ca56f332de32226adad2585f1fff">PotatoLib::BufferObject::Create</a></div><div class="ttdeci">EStatus Create(const VertexDataArray &amp;aDataArray)</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8cpp_source.html#l00011">BufferObject.cpp:11</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_buffer_object_html_ae8ec1980e7a25242ae14b6df66c78359"><div class="ttname"><a href="struct_potato_lib_1_1_buffer_object.html#ae8ec1980e7a25242ae14b6df66c78359">PotatoLib::BufferObject::PushAttribute</a></div><div class="ttdeci">void PushAttribute(uint32_t aLocation, int32_t aSize)</div><div class="ttdoc">頂点属性を追加.</div><div class="ttdef"><b>Definition</b> <a href="_buffer_object_8cpp_source.html#l00025">BufferObject.cpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_0598e2f9d8cb32f037bce7e1a6f939ce.html">Source</a></li><li class="navelem"><a class="el" href="dir_23363cb32ef244da0521aa994d8b2776.html">Render</a></li><li class="navelem"><a class="el" href="dir_f4386a71ac1ead2771516c83b817dd41.html">Buffer</a></li><li class="navelem"><b>BufferObject.h</b></li>
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_ee6abb1a8641b4917ca68aeb95f0e21e.html">Projects</a></li><li class="navelem"><a class="el" href="dir_4142c67eb999c1ccabb5b0e63db62c6e.html">PotatoLib</a></li><li class="navelem"><a class="el" href="dir_7309ff20c5798acd695f1578b297d69a.html">Source</a></li><li class="navelem"><a class="el" href="dir_b8ec33abf4c7461486a643570c1b9b69.html">Render</a></li><li class="navelem"><a class="el" href="dir_828838cf38f7a091c3e5b200b8509756.html">Buffer</a></li><li class="navelem"><a class="el" href="_buffer_object_8h.html">BufferObject.h</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

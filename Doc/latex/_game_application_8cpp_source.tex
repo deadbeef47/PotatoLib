@@ -1,43 +1,43 @@
 \doxysection{Game\+Application.\+cpp}
-\hypertarget{_game_application_8cpp_source}{}\label{_game_application_8cpp_source}\index{Project/Source/Framework/GameApplication.cpp@{Project/Source/Framework/GameApplication.cpp}}
+\hypertarget{_game_application_8cpp_source}{}\label{_game_application_8cpp_source}\index{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/GameApplication.cpp@{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/GameApplication.cpp}}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}GameApplication.h"{}}}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}Utility\(\backslash\)Log.h"{}}}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_application_8h}{GameApplication.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_log_8h}{Utility\(\backslash\)Log.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00003}00003\ }
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <GL\(\backslash\)glew.h>}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <GLFW\(\backslash\)glfw3.h>}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00006}00006\ \textcolor{comment}{//\#include\ <glm\(\backslash\)glm.hpp>}}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}Framework\(\backslash\)Window.h"{}}}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_window_8h}{Framework\(\backslash\)Window.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00008}00008\ }
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00009}00009\ \textcolor{keyword}{namespace\ }PotatoLib\ \{}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00010}00010\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00011}00011\ \ \ \ \ GameApplication::GameApplication()\ :}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00011}\mbox{\hyperlink{class_potato_lib_1_1_game_application_a3303ba5dc318dc12c4354ad7b765630c}{00011}}\ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_game_application_a3303ba5dc318dc12c4354ad7b765630c}{GameApplication::GameApplication}}()\ :}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ mMajorVersion(4),\ mMinorVersion(3)\ \{}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00013}00013\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{keywordtype}{void}\ GameApplication::Run()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00015}\mbox{\hyperlink{class_potato_lib_1_1_game_application_a3326931bf2fbd1aeaa913760629bd869}{00015}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_potato_lib_1_1_game_application_a3326931bf2fbd1aeaa913760629bd869}{GameApplication::Run}}()\ \{}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00016}00016\ }
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ PotatoLog(\textcolor{stringliteral}{"{}glfw\ version\ :\ "{}},\ glfwGetVersionString());}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00018}00018\ }
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ glfwSetErrorCallback([](\textcolor{keywordtype}{int}\ aError,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ aDescription)\ \{}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ PotatoLog(\textcolor{stringliteral}{"{}Error\ Number:\ "{}},\ aError);}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ PotatoLog(\textcolor{stringliteral}{"{}Description:\ "{}},\ aDescription);}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \});}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00023}00023\ }
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (glfwInit()\ ==\ GL\_FALSE)\ \{}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ PotatoLog(\textcolor{stringliteral}{"{}glfwInit\ error"{}});}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00028}00028\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MAJOR,\ mMajorVersion);}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MINOR,\ mMinorVersion);}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MAJOR,\ \mbox{\hyperlink{class_potato_lib_1_1_game_application_a08a7b55569076f5fb5cd24fea25ad8e2}{mMajorVersion}});}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MINOR,\ \mbox{\hyperlink{class_potato_lib_1_1_game_application_ac9c660b1276618c0f261644480d91f39}{mMinorVersion}});}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ glfwWindowHint(GLFW\_OPENGL\_FORWARD\_COMPAT,\ GL\_TRUE);}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ glfwWindowHint(GLFW\_OPENGL\_PROFILE,\ GLFW\_OPENGL\_CORE\_PROFILE);}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00033}00033\ }
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ atexit([]()\ \{\ glfwTerminate();\ \});}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00035}00035\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ Window\ lWindow;}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_window}{Window}}\ lWindow;}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00037}00037\ }
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ glewExperimental\ =\ GL\_TRUE;}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ GLenum\ lError\ =\ glewInit();}
@@ -46,26 +46,28 @@
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00044}00044\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ Initialize();}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ glEnable(GL\_CULL\_FACE);}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00046}00046\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(glfwWindowShouldClose(lWindow.mHandle)\ |\ glfwGetKey(lWindow.mHandle,\ GLFW\_KEY\_ESCAPE)))\ \{}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_game_application_a7c5ed876a349d053a67982b1ee37dfc4}{Initialize}}();}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00048}00048\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ Update();}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(glfwWindowShouldClose(lWindow.mHandle)\ |\ glfwGetKey(lWindow.mHandle,\ GLFW\_KEY\_ESCAPE)))\ \{}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00050}00050\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ glClear(GL\_COLOR\_BUFFER\_BIT\ |\ GL\_DEPTH\_BUFFER\_BIT);}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_game_application_afea309d410f85d9a954b23e81ab015ed}{Update}}();}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00052}00052\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ glClearColor(0.0,\ 0.0,\ 0.0,\ 1.0);}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ glClear(GL\_COLOR\_BUFFER\_BIT\ |\ GL\_DEPTH\_BUFFER\_BIT);}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00054}00054\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ Draw();}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ glClearColor(0.5,\ 0.5,\ 0.5,\ 1.0);}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00056}00056\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSwapBuffers(lWindow.mHandle);}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//glfwWaitEvents();}}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ glfwPollEvents();}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00061}00061\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ Finish();}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_game_application_ad012d33464d0f7f06b3c8ced84647172}{Draw}}();}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSwapBuffers(lWindow.mHandle);}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//glfwWaitEvents();}}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ glfwPollEvents();}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00063}00063\ }
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00064}00064\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_potato_lib_1_1_game_application_a1f5347bf86a511e1995386cee82350ba}{Finish}}();}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00066}00066\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_application_8cpp_source_l00067}00067\ \}}
 
 \end{DoxyCode}

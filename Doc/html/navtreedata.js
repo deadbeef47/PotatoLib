@@ -25,9 +25,16 @@
 var NAVTREE =
 [
   [ "PotatoLib", "index.html", [
+    [ "PotatoLib ポータル", "index.html", "index" ],
     [ "クラス", "annotated.html", [
       [ "クラス一覧", "annotated.html", "annotated_dup" ],
-      [ "クラス索引", "classes.html", null ]
+      [ "クラス索引", "classes.html", null ],
+      [ "クラスメンバ", "functions.html", [
+        [ "全て", "functions.html", null ],
+        [ "関数", "functions_func.html", null ],
+        [ "変数", "functions_vars.html", null ],
+        [ "列挙型", "functions_enum.html", null ]
+      ] ]
     ] ],
     [ "ファイル", "files.html", [
       [ "ファイル一覧", "files.html", "files_dup" ]

@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -98,32 +98,43 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
   <div class="headertitle"><div class="title">PotatoLib::ProgramObject 構造体</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>シェーダーステージ結合クラス  
+ <a href="struct_potato_lib_1_1_program_object.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_program_object_8h_source.html">ProgramObject.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
-<tr class="memitem:ac38970c310fe84d1b1fe823a2217cead"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><b>EStatus</b> { <b>eSuccess</b>
-, <b>eCreateFail</b>
-, <b>eLinkFail</b>
+<tr class="memitem:ac38970c310fe84d1b1fe823a2217cead"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a> { <a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44">eSuccess</a>
+, <a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359">eCreateFail</a>
+, <a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85">eLinkFail</a>
  }</td></tr>
+<tr class="memdesc:ac38970c310fe84d1b1fe823a2217cead"><td class="mdescLeft">&#160;</td><td class="mdescRight">エラーハンドリング用ステータス  <a href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">[詳解]</a><br /></td></tr>
 <tr class="separator:ac38970c310fe84d1b1fe823a2217cead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:ace5f2c5f6e82591268c2e0fa42428c2d"><td class="memItemLeft" align="right" valign="top">EStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#ace5f2c5f6e82591268c2e0fa42428c2d">Create</a> ()</td></tr>
+<tr class="memitem:ace5f2c5f6e82591268c2e0fa42428c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#ace5f2c5f6e82591268c2e0fa42428c2d">Create</a> ()</td></tr>
+<tr class="memdesc:ace5f2c5f6e82591268c2e0fa42428c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">プログラムオブジェクト作成  <br /></td></tr>
 <tr class="separator:ace5f2c5f6e82591268c2e0fa42428c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa74c2d9eb626782e8b3b03c0c09f795d"><td class="memItemLeft" align="right" valign="top">EStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#aa74c2d9eb626782e8b3b03c0c09f795d">Attach</a> (const <a class="el" href="struct_potato_lib_1_1_shader_object.html">ShaderObject</a> &amp;aShaderObject)</td></tr>
+<tr class="memitem:aa74c2d9eb626782e8b3b03c0c09f795d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#aa74c2d9eb626782e8b3b03c0c09f795d">Attach</a> (const <a class="el" href="struct_potato_lib_1_1_shader_object.html">ShaderObject</a> &amp;aShaderObject)</td></tr>
+<tr class="memdesc:aa74c2d9eb626782e8b3b03c0c09f795d"><td class="mdescLeft">&#160;</td><td class="mdescRight">アタッチするシェーダーオブジェクト指定.  <br /></td></tr>
 <tr class="separator:aa74c2d9eb626782e8b3b03c0c09f795d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1d1664ba460f23ddf66421227bb5af"><td class="memItemLeft" align="right" valign="top">EStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#a0c1d1664ba460f23ddf66421227bb5af">Link</a> ()</td></tr>
+<tr class="memitem:a0c1d1664ba460f23ddf66421227bb5af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#a0c1d1664ba460f23ddf66421227bb5af">Link</a> ()</td></tr>
+<tr class="memdesc:a0c1d1664ba460f23ddf66421227bb5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">各シェーダーステージをリンク.  <br /></td></tr>
 <tr class="separator:a0c1d1664ba460f23ddf66421227bb5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
 <tr class="memitem:ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7">mHandle</a> = 0u</td></tr>
+<tr class="memdesc:ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">プログラムハンドル  <br /></td></tr>
 <tr class="separator:ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock">
-<p class="definition"> <a class="el" href="_program_object_8h_source.html">ProgramObject.h</a> の <a class="el" href="_program_object_8h_source.html#l00009">9</a> 行目に定義があります。</p>
+<div class="textblock"><p>シェーダーステージ結合クラス </p>
+
+<p class="definition"> <a class="el" href="_program_object_8h_source.html">ProgramObject.h</a> の <a class="el" href="_program_object_8h_source.html#l00017">17</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="ac38970c310fe84d1b1fe823a2217cead" name="ac38970c310fe84d1b1fe823a2217cead"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac38970c310fe84d1b1fe823a2217cead">&#9670;&#160;</a></span>EStatus</h2>
@@ -135,7 +146,7 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class PotatoLib::ProgramObject::EStatus</td>
+          <td class="memname">enum class <a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">PotatoLib::ProgramObject::EStatus</a></td>
         </tr>
       </table>
   </td>
@@ -145,7 +156,17 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_program_object_8h_source.html">ProgramObject.h</a> の <a class="el" href="_program_object_8h_source.html#l00010">10</a> 行目に定義があります。</p>
+<p>エラーハンドリング用ステータス </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44" name="ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44"></a>eSuccess&#160;</td><td class="fielddoc"><p>成功 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359" name="ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359"></a>eCreateFail&#160;</td><td class="fielddoc"><p>オブジェクト作成失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85" name="ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85"></a>eLinkFail&#160;</td><td class="fielddoc"><p>リンク失敗 </p>
+</td></tr>
+</table>
+
+<p class="definition"> <a class="el" href="_program_object_8h_source.html">ProgramObject.h</a> の <a class="el" href="_program_object_8h_source.html#l00022">22</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -157,7 +178,7 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ProgramObject::EStatus PotatoLib::ProgramObject::Attach </td>
+          <td class="memname"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">ProgramObject::EStatus</a> PotatoLib::ProgramObject::Attach </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_potato_lib_1_1_shader_object.html">ShaderObject</a> &amp;&#160;</td>
           <td class="paramname"><em>aShaderObject</em></td><td>)</td>
@@ -165,6 +186,15 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>アタッチするシェーダーオブジェクト指定. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aShaderObject</td><td>対象シェーダーオブジェクト </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーハンドリング用リザルト </dd></dl>
 
 <p class="definition"> <a class="el" href="_program_object_8cpp_source.html">ProgramObject.cpp</a> の <a class="el" href="_program_object_8cpp_source.html#l00023">23</a> 行目に定義があります。</p>
 
@@ -177,13 +207,16 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ProgramObject::EStatus PotatoLib::ProgramObject::Create </td>
+          <td class="memname"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">ProgramObject::EStatus</a> PotatoLib::ProgramObject::Create </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>プログラムオブジェクト作成 </p>
+<dl class="section return"><dt>戻り値</dt><dd>エラーハンドリング用リザルト </dd></dl>
 
 <p class="definition"> <a class="el" href="_program_object_8cpp_source.html">ProgramObject.cpp</a> の <a class="el" href="_program_object_8cpp_source.html#l00011">11</a> 行目に定義があります。</p>
 
@@ -196,13 +229,16 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ProgramObject::EStatus PotatoLib::ProgramObject::Link </td>
+          <td class="memname"><a class="el" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">ProgramObject::EStatus</a> PotatoLib::ProgramObject::Link </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>各シェーダーステージをリンク. </p>
+<dl class="section return"><dt>戻り値</dt><dd>エラーハンドリング用リザルト </dd></dl>
 
 <p class="definition"> <a class="el" href="_program_object_8cpp_source.html">ProgramObject.cpp</a> の <a class="el" href="_program_object_8cpp_source.html#l00032">32</a> 行目に定義があります。</p>
 
@@ -221,13 +257,15 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_program_object.h
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_program_object_8h_source.html">ProgramObject.h</a> の <a class="el" href="_program_object_8h_source.html#l00016">16</a> 行目に定義があります。</p>
+<p>プログラムハンドル </p>
+
+<p class="definition"> <a class="el" href="_program_object_8h_source.html">ProgramObject.h</a> の <a class="el" href="_program_object_8h_source.html#l00032">32</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>Project/Source/Render/Shader/<a class="el" href="_program_object_8h_source.html">ProgramObject.h</a></li>
-<li>Project/Source/Render/Shader/<a class="el" href="_program_object_8cpp_source.html">ProgramObject.cpp</a></li>
+<li>G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Shader/<a class="el" href="_program_object_8h_source.html">ProgramObject.h</a></li>
+<li>G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Shader/<a class="el" href="_program_object_8cpp_source.html">ProgramObject.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

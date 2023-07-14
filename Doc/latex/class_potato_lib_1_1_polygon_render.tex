@@ -1,22 +1,31 @@
 \doxysection{Potato\+Lib\+::Polygon\+Render クラス}
 \hypertarget{class_potato_lib_1_1_polygon_render}{}\label{class_potato_lib_1_1_polygon_render}\index{PotatoLib::PolygonRender@{PotatoLib::PolygonRender}}
+
+
+ポリゴン描画  
+
+
+
+
+{\ttfamily \#include $<$Polygon\+Render.\+h$>$}
+
 \doxysubsubsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_ab52983202ca749c831925a389f3120fc}{Add\+Shader}} (EShader\+Type a\+Shader\+Type, const char \texorpdfstring{$\ast$}{*}a\+Code)
-\item 
+void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_ab52983202ca749c831925a389f3120fc}{Add\+Shader}} (\mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}} a\+Shader\+Type, const char \texorpdfstring{$\ast$}{*}a\+Code)
+\begin{DoxyCompactList}\small\item\em 各シェーダーステージ追加. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_a7452aa77030e80bd2647a30e81bddfc2}{Setup\+Program}} ()
-\item 
-void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_ac3bce88c1978ead1599e461bedcc7f37}{Set\+Buffer}} (const Vertex\+Index\+Array \&a\+Indices, const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&a\+Buffer\+Object)
-\item 
+\begin{DoxyCompactList}\small\item\em プログラムセットアップ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_ac3bce88c1978ead1599e461bedcc7f37}{Set\+Buffer}} (const \mbox{\hyperlink{_type_8h_a7397e17c43f3d193d97ac802db6da648}{Vertex\+Index\+Array}} \&a\+Indices, const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&a\+Buffer\+Object)
+\begin{DoxyCompactList}\small\item\em 頂点情報セット. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_a6af4e86d14b97d82c4286b915ff2987c}{Draw}} (const glm\+::mat4x4 \&a\+Model\+Matrix)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 描画実行. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{詳解}
+ポリゴン描画 
 
-
- \mbox{\hyperlink{_polygon_render_8h_source}{Polygon\+Render.\+h}} の \mbox{\hyperlink{_polygon_render_8h_source_l00012}{12}} 行目に定義があります。
+ \mbox{\hyperlink{_polygon_render_8h_source}{Polygon\+Render.\+h}} の \mbox{\hyperlink{_polygon_render_8h_source_l00020}{20}} 行目に定義があります。
 
 
 
@@ -25,8 +34,19 @@ void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_a6af4e86d14b97d82c4286
 \index{PotatoLib::PolygonRender@{PotatoLib::PolygonRender}!AddShader@{AddShader}}
 \index{AddShader@{AddShader}!PotatoLib::PolygonRender@{PotatoLib::PolygonRender}}
 \doxysubsubsection{\texorpdfstring{AddShader()}{AddShader()}}
-{\footnotesize\ttfamily void Potato\+Lib\+::\+Polygon\+Render\+::\+Add\+Shader (\begin{DoxyParamCaption}\item[{EShader\+Type}]{a\+Shader\+Type,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Potato\+Lib\+::\+Polygon\+Render\+::\+Add\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_type_8h_a151de26a03f4d8f83767e781965e6272}{EShader\+Type}}}]{a\+Shader\+Type,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{a\+Code }\end{DoxyParamCaption})}
 
+
+
+各シェーダーステージ追加. 
+
+
+\begin{DoxyParams}{引数}
+{\em a\+Shader\+Type} & シェーダータイプ \\
+\hline
+{\em a\+Code} & シェーダーソース \\
+\hline
+\end{DoxyParams}
 
 
  \mbox{\hyperlink{_polygon_render_8cpp_source}{Polygon\+Render.\+cpp}} の \mbox{\hyperlink{_polygon_render_8cpp_source_l00007}{7}} 行目に定義があります。
@@ -39,14 +59,34 @@ void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_a6af4e86d14b97d82c4286
 
 
 
+描画実行. 
+
+
+\begin{DoxyParams}{引数}
+{\em a\+Model\+Matrix} & モデル行列(\+Translate Rotate Scale) \\
+\hline
+\end{DoxyParams}
+
+
  \mbox{\hyperlink{_polygon_render_8cpp_source}{Polygon\+Render.\+cpp}} の \mbox{\hyperlink{_polygon_render_8cpp_source_l00027}{27}} 行目に定義があります。
 
 \Hypertarget{class_potato_lib_1_1_polygon_render_ac3bce88c1978ead1599e461bedcc7f37}\label{class_potato_lib_1_1_polygon_render_ac3bce88c1978ead1599e461bedcc7f37} 
 \index{PotatoLib::PolygonRender@{PotatoLib::PolygonRender}!SetBuffer@{SetBuffer}}
 \index{SetBuffer@{SetBuffer}!PotatoLib::PolygonRender@{PotatoLib::PolygonRender}}
 \doxysubsubsection{\texorpdfstring{SetBuffer()}{SetBuffer()}}
-{\footnotesize\ttfamily void Potato\+Lib\+::\+Polygon\+Render\+::\+Set\+Buffer (\begin{DoxyParamCaption}\item[{const Vertex\+Index\+Array \&}]{a\+Indices,  }\item[{const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&}]{a\+Buffer\+Object }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Potato\+Lib\+::\+Polygon\+Render\+::\+Set\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_type_8h_a7397e17c43f3d193d97ac802db6da648}{Vertex\+Index\+Array}} \&}]{a\+Indices,  }\item[{const \mbox{\hyperlink{struct_potato_lib_1_1_buffer_object}{Buffer\+Object}} \&}]{a\+Buffer\+Object }\end{DoxyParamCaption})}
 
+
+
+頂点情報セット. 
+
+
+\begin{DoxyParams}{引数}
+{\em a\+Indices} & 頂点インデックス \\
+\hline
+{\em a\+Buffer\+Object} & 頂点データ \\
+\hline
+\end{DoxyParams}
 
 
  \mbox{\hyperlink{_polygon_render_8cpp_source}{Polygon\+Render.\+cpp}} の \mbox{\hyperlink{_polygon_render_8cpp_source_l00022}{22}} 行目に定義があります。
@@ -59,11 +99,18 @@ void \mbox{\hyperlink{class_potato_lib_1_1_polygon_render_a6af4e86d14b97d82c4286
 
 
 
+プログラムセットアップ. 
+
+\doxylink{class_potato_lib_1_1_polygon_render_ab52983202ca749c831925a389f3120fc}{Add\+Shader} で追加したシェーダーステージの結合・セットアップ \begin{DoxySeeAlso}{参照}
+\doxylink{struct_potato_lib_1_1_program_object}{Program\+Object} 
+\end{DoxySeeAlso}
+
+
  \mbox{\hyperlink{_polygon_render_8cpp_source}{Polygon\+Render.\+cpp}} の \mbox{\hyperlink{_polygon_render_8cpp_source_l00013}{13}} 行目に定義があります。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-Project/\+Source/\+Render/Polygon\+Render.\+h\item 
-Project/\+Source/\+Render/Polygon\+Render.\+cpp\end{DoxyCompactItemize}
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\mbox{\hyperlink{_polygon_render_8h}{Polygon\+Render.\+h}}\item 
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/Polygon\+Render.\+cpp\end{DoxyCompactItemize}
