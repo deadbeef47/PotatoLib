@@ -1,7 +1,7 @@
 # PotatoLib ポータル {#mainpage}
 
 <div align="left">
-![](./logo/ptt.png)
+![ptt_logo](./logo/ptt.png)
 </div>
 
 ## フォルダ構成 概要
