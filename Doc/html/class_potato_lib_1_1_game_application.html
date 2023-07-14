@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -92,30 +92,55 @@ $(document).ready(function(){initNavTree('class_potato_lib_1_1_game_application.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
 <a href="#pro-attribs">限定公開変数類</a> &#124;
 <a href="class_potato_lib_1_1_game_application-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">PotatoLib::GameApplication クラス</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>ゲームループ/イベント実行クラス  
+ <a href="class_potato_lib_1_1_game_application.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_application_8h_source.html">GameApplication.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3303ba5dc318dc12c4354ad7b765630c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#a3303ba5dc318dc12c4354ad7b765630c">GameApplication</a> ()</td></tr>
+<tr class="memdesc:a3303ba5dc318dc12c4354ad7b765630c"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ.  <br /></td></tr>
+<tr class="separator:a3303ba5dc318dc12c4354ad7b765630c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3326931bf2fbd1aeaa913760629bd869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#a3326931bf2fbd1aeaa913760629bd869">Run</a> ()</td></tr>
+<tr class="memdesc:a3326931bf2fbd1aeaa913760629bd869"><td class="mdescLeft">&#160;</td><td class="mdescRight">ループ開始  <br /></td></tr>
 <tr class="separator:a3326931bf2fbd1aeaa913760629bd869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7c5ed876a349d053a67982b1ee37dfc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#a7c5ed876a349d053a67982b1ee37dfc4">Initialize</a> ()</td></tr>
+<tr class="memdesc:a7c5ed876a349d053a67982b1ee37dfc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームループ初期化  <br /></td></tr>
+<tr class="separator:a7c5ed876a349d053a67982b1ee37dfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea309d410f85d9a954b23e81ab015ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#afea309d410f85d9a954b23e81ab015ed">Update</a> ()</td></tr>
+<tr class="memdesc:afea309d410f85d9a954b23e81ab015ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームループロジック更新  <br /></td></tr>
+<tr class="separator:afea309d410f85d9a954b23e81ab015ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad012d33464d0f7f06b3c8ced84647172"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#ad012d33464d0f7f06b3c8ced84647172">Draw</a> ()</td></tr>
+<tr class="memdesc:ad012d33464d0f7f06b3c8ced84647172"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームループ 描画更新  <br /></td></tr>
+<tr class="separator:ad012d33464d0f7f06b3c8ced84647172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5347bf86a511e1995386cee82350ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#a1f5347bf86a511e1995386cee82350ba">Finish</a> ()</td></tr>
+<tr class="memdesc:a1f5347bf86a511e1995386cee82350ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームループ 終了処理  <br /></td></tr>
+<tr class="separator:a1f5347bf86a511e1995386cee82350ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 限定公開変数類</h2></td></tr>
 <tr class="memitem:a08a7b55569076f5fb5cd24fea25ad8e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#a08a7b55569076f5fb5cd24fea25ad8e2">mMajorVersion</a></td></tr>
+<tr class="memdesc:a08a7b55569076f5fb5cd24fea25ad8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL メジャーバージョン  <br /></td></tr>
 <tr class="separator:a08a7b55569076f5fb5cd24fea25ad8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9c660b1276618c0f261644480d91f39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_lib_1_1_game_application.html#ac9c660b1276618c0f261644480d91f39">mMinorVersion</a></td></tr>
+<tr class="memdesc:ac9c660b1276618c0f261644480d91f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL マイナーバージョン  <br /></td></tr>
 <tr class="separator:ac9c660b1276618c0f261644480d91f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>アプリケーション基底クラス </p>
+<div class="textblock"><p>ゲームループ/イベント実行クラス </p>
 
-<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00009">9</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00017">17</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a3303ba5dc318dc12c4354ad7b765630c" name="a3303ba5dc318dc12c4354ad7b765630c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3303ba5dc318dc12c4354ad7b765630c">&#9670;&#160;</a></span>GameApplication()</h2>
@@ -132,11 +157,103 @@ $(document).ready(function(){initNavTree('class_potato_lib_1_1_game_application.
       </table>
 </div><div class="memdoc">
 
+<p>コンストラクタ. </p>
+
 <p class="definition"> <a class="el" href="_game_application_8cpp_source.html">GameApplication.cpp</a> の <a class="el" href="_game_application_8cpp_source.html#l00011">11</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="ad012d33464d0f7f06b3c8ced84647172" name="ad012d33464d0f7f06b3c8ced84647172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad012d33464d0f7f06b3c8ced84647172">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PotatoLib::GameApplication::Draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲームループ 描画更新 </p>
+<p>ゲームループ 描画更新 (ユーザー拡張可). </p>
+
+<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00044">44</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a1f5347bf86a511e1995386cee82350ba" name="a1f5347bf86a511e1995386cee82350ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5347bf86a511e1995386cee82350ba">&#9670;&#160;</a></span>Finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PotatoLib::GameApplication::Finish </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲームループ 終了処理 </p>
+<p>ゲームループ 終了処理 (ユーザー拡張可). </p>
+
+<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00049">49</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a7c5ed876a349d053a67982b1ee37dfc4" name="a7c5ed876a349d053a67982b1ee37dfc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5ed876a349d053a67982b1ee37dfc4">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PotatoLib::GameApplication::Initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲームループ初期化 </p>
+<p>ゲームループ初期化 (ユーザー拡張可) </p>
+
+<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00034">34</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="a3326931bf2fbd1aeaa913760629bd869" name="a3326931bf2fbd1aeaa913760629bd869"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3326931bf2fbd1aeaa913760629bd869">&#9670;&#160;</a></span>Run()</h2>
 
@@ -152,7 +269,39 @@ $(document).ready(function(){initNavTree('class_potato_lib_1_1_game_application.
       </table>
 </div><div class="memdoc">
 
+<p>ループ開始 </p>
+
 <p class="definition"> <a class="el" href="_game_application_8cpp_source.html">GameApplication.cpp</a> の <a class="el" href="_game_application_8cpp_source.html#l00015">15</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="afea309d410f85d9a954b23e81ab015ed" name="afea309d410f85d9a954b23e81ab015ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea309d410f85d9a954b23e81ab015ed">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PotatoLib::GameApplication::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲームループロジック更新 </p>
+<p>ゲームループ ロジック更新 (ユーザー拡張可). </p>
+
+<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00039">39</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -177,7 +326,9 @@ $(document).ready(function(){initNavTree('class_potato_lib_1_1_game_application.
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00021">21</a> 行目に定義があります。</p>
+<p>OpenGL メジャーバージョン </p>
+
+<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00053">53</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -201,13 +352,15 @@ $(document).ready(function(){initNavTree('class_potato_lib_1_1_game_application.
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00021">21</a> 行目に定義があります。</p>
+<p>OpenGL マイナーバージョン </p>
+
+<p class="definition"> <a class="el" href="_game_application_8h_source.html">GameApplication.h</a> の <a class="el" href="_game_application_8h_source.html#l00055">55</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>Project/Source/Framework/<a class="el" href="_game_application_8h_source.html">GameApplication.h</a></li>
-<li>Project/Source/Framework/<a class="el" href="_game_application_8cpp_source.html">GameApplication.cpp</a></li>
+<li>G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/<a class="el" href="_game_application_8h_source.html">GameApplication.h</a></li>
+<li>G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/<a class="el" href="_game_application_8cpp_source.html">GameApplication.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

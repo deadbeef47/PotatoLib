@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -99,38 +99,50 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
   <div class="headertitle"><div class="title">PotatoLib::BufferObject 構造体</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>VBO ラッピングクラス  
+ <a href="struct_potato_lib_1_1_buffer_object.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">Attribute</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点属性データ  <a href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
-<tr class="memitem:a9e4b9dab2c58101475494f154c1fc0cb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><b>EStatus</b> { <b>eSuccess</b>
-, <b>eCreateFail</b>
+<tr class="memitem:a9e4b9dab2c58101475494f154c1fc0cb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">EStatus</a> { <a class="el" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44">eSuccess</a>
+, <a class="el" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cba3672416286ea941c22e7d8bcd9edf359">eCreateFail</a>
  }</td></tr>
+<tr class="memdesc:a9e4b9dab2c58101475494f154c1fc0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">エラーハンドリング用ステータス  <a href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">[詳解]</a><br /></td></tr>
 <tr class="separator:a9e4b9dab2c58101475494f154c1fc0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:ad7f3ca56f332de32226adad2585f1fff"><td class="memItemLeft" align="right" valign="top">EStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#ad7f3ca56f332de32226adad2585f1fff">Create</a> (const VertexDataArray &amp;aDataArray)</td></tr>
+<tr class="memitem:ad7f3ca56f332de32226adad2585f1fff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">EStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#ad7f3ca56f332de32226adad2585f1fff">Create</a> (const <a class="el" href="_type_8h.html#a5aa941a828cfbfbca4898c79f64981cb">VertexDataArray</a> &amp;aDataArray)</td></tr>
 <tr class="separator:ad7f3ca56f332de32226adad2585f1fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8ec1980e7a25242ae14b6df66c78359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#ae8ec1980e7a25242ae14b6df66c78359">PushAttribute</a> (uint32_t aLocation, int32_t aSize)</td></tr>
+<tr class="memdesc:ae8ec1980e7a25242ae14b6df66c78359"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点属性を追加.  <br /></td></tr>
 <tr class="separator:ae8ec1980e7a25242ae14b6df66c78359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a171cf047dbe2cee629c3914684fa0e71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#a171cf047dbe2cee629c3914684fa0e71">SetupAttribute</a> () const</td></tr>
+<tr class="memdesc:a171cf047dbe2cee629c3914684fa0e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点情報内訳FIX.  <br /></td></tr>
 <tr class="separator:a171cf047dbe2cee629c3914684fa0e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
 <tr class="memitem:aba27ea4bb361ff92f8af3dee104290fa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#aba27ea4bb361ff92f8af3dee104290fa">mHandle</a> = 0u</td></tr>
+<tr class="memdesc:aba27ea4bb361ff92f8af3dee104290fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">VBO ハンドル  <br /></td></tr>
 <tr class="separator:aba27ea4bb361ff92f8af3dee104290fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb483c06bd35c463bb16be397ee35bf1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_potato_lib_1_1_buffer_object_1_1_attribute.html">Attribute</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#abb483c06bd35c463bb16be397ee35bf1">mAttributes</a></td></tr>
+<tr class="memdesc:abb483c06bd35c463bb16be397ee35bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点属性データ配列  <br /></td></tr>
 <tr class="separator:abb483c06bd35c463bb16be397ee35bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock">
-<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00007">7</a> 行目に定義があります。</p>
+<div class="textblock"><p>VBO ラッピングクラス </p>
+
+<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00015">15</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="a9e4b9dab2c58101475494f154c1fc0cb" name="a9e4b9dab2c58101475494f154c1fc0cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e4b9dab2c58101475494f154c1fc0cb">&#9670;&#160;</a></span>EStatus</h2>
@@ -142,7 +154,7 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class PotatoLib::BufferObject::EStatus</td>
+          <td class="memname">enum class <a class="el" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">PotatoLib::BufferObject::EStatus</a></td>
         </tr>
       </table>
   </td>
@@ -152,7 +164,15 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00008">8</a> 行目に定義があります。</p>
+<p>エラーハンドリング用ステータス </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44" name="a9e4b9dab2c58101475494f154c1fc0cba27a410c6b361732f3b4237bff6478a44"></a>eSuccess&#160;</td><td class="fielddoc"><p>成功 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e4b9dab2c58101475494f154c1fc0cba3672416286ea941c22e7d8bcd9edf359" name="a9e4b9dab2c58101475494f154c1fc0cba3672416286ea941c22e7d8bcd9edf359"></a>eCreateFail&#160;</td><td class="fielddoc"><p>オブジェクト作成失敗 </p>
+</td></tr>
+</table>
+
+<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00021">21</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -164,14 +184,22 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BufferObject::EStatus PotatoLib::BufferObject::Create </td>
+          <td class="memname"><a class="el" href="struct_potato_lib_1_1_buffer_object.html#a9e4b9dab2c58101475494f154c1fc0cb">BufferObject::EStatus</a> PotatoLib::BufferObject::Create </td>
           <td>(</td>
-          <td class="paramtype">const VertexDataArray &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="_type_8h.html#a5aa941a828cfbfbca4898c79f64981cb">VertexDataArray</a> &amp;&#160;</td>
           <td class="paramname"><em>aDataArray</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>頂点バッファオブジェクト作成.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aDataArray</td><td>頂点データ配列 <a class="el" href="_type_8h.html#a5aa941a828cfbfbca4898c79f64981cb">VertexDataArray</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーハンドリング用リザルト </dd></dl>
 
 <p class="definition"> <a class="el" href="_buffer_object_8cpp_source.html">BufferObject.cpp</a> の <a class="el" href="_buffer_object_8cpp_source.html#l00011">11</a> 行目に定義があります。</p>
 
@@ -203,6 +231,15 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
       </table>
 </div><div class="memdoc">
 
+<p>頂点属性を追加. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aLocation</td><td>属性ID </td></tr>
+    <tr><td class="paramname">aSize</td><td>要素数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition"> <a class="el" href="_buffer_object_8cpp_source.html">BufferObject.cpp</a> の <a class="el" href="_buffer_object_8cpp_source.html#l00025">25</a> 行目に定義があります。</p>
 
 </div>
@@ -222,6 +259,9 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
       </table>
 </div><div class="memdoc">
 
+<p>頂点情報内訳FIX. </p>
+<p><a class="el" href="struct_potato_lib_1_1_buffer_object.html#ae8ec1980e7a25242ae14b6df66c78359">PushAttribute</a> 実行後に処理する </p>
+
 <p class="definition"> <a class="el" href="_buffer_object_8cpp_source.html">BufferObject.cpp</a> の <a class="el" href="_buffer_object_8cpp_source.html#l00029">29</a> 行目に定義があります。</p>
 
 </div>
@@ -239,7 +279,9 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00019">19</a> 行目に定義があります。</p>
+<p>頂点属性データ配列 </p>
+
+<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00042">42</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -255,13 +297,15 @@ $(document).ready(function(){initNavTree('struct_potato_lib_1_1_buffer_object.ht
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00018">18</a> 行目に定義があります。</p>
+<p>VBO ハンドル </p>
+
+<p class="definition"> <a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a> の <a class="el" href="_buffer_object_8h_source.html#l00040">40</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>Project/Source/Render/Buffer/<a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a></li>
-<li>Project/Source/Render/Buffer/<a class="el" href="_buffer_object_8cpp_source.html">BufferObject.cpp</a></li>
+<li>G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Buffer/<a class="el" href="_buffer_object_8h_source.html">BufferObject.h</a></li>
+<li>G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Buffer/<a class="el" href="_buffer_object_8cpp_source.html">BufferObject.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

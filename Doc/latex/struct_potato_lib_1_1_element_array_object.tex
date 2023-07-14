@@ -1,28 +1,37 @@
 \doxysection{Potato\+Lib\+::Element\+Array\+Object 構造体}
 \hypertarget{struct_potato_lib_1_1_element_array_object}{}\label{struct_potato_lib_1_1_element_array_object}\index{PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}}
+
+
+頂点インデックスオブジェクト  
+
+
+
+
+{\ttfamily \#include $<$Element\+Array\+Object.\+h$>$}
+
 \doxysubsubsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
-enum class {\bfseries EStatus} \{ {\bfseries e\+Success}
-, {\bfseries e\+Create\+Fail}
+enum class \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4c}{EStatus}} \{ \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4ca27a410c6b361732f3b4237bff6478a44}{e\+Success}}
+, \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4ca3672416286ea941c22e7d8bcd9edf359}{e\+Create\+Fail}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em エラーハンドリング用ステータス \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-EStatus \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_a467fa37b76f9bf5aa83e46d4b7dea7d5}{Create}} (const Vertex\+Index\+Array \&a\+Index\+Array)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4c}{EStatus}} \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_a467fa37b76f9bf5aa83e46d4b7dea7d5}{Create}} (const \mbox{\hyperlink{_type_8h_a7397e17c43f3d193d97ac802db6da648}{Vertex\+Index\+Array}} \&a\+Index\+Array)
+\begin{DoxyCompactList}\small\item\em 頂点インデックスオブジェクト作成. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_a3864b68074984b2d726aa641386a5f1e}{m\+Handle}} = 0u
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em インデックスオブジェクトハンドル \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{詳解}
+頂点インデックスオブジェクト 
 
-
- \mbox{\hyperlink{_element_array_object_8h_source}{Element\+Array\+Object.\+h}} の \mbox{\hyperlink{_element_array_object_8h_source_l00007}{7}} 行目に定義があります。
+ \mbox{\hyperlink{_element_array_object_8h_source}{Element\+Array\+Object.\+h}} の \mbox{\hyperlink{_element_array_object_8h_source_l00015}{15}} 行目に定義があります。
 
 
 
@@ -31,11 +40,25 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_a3864b
 \index{PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}!EStatus@{EStatus}}
 \index{EStatus@{EStatus}!PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}}
 \doxysubsubsection{\texorpdfstring{EStatus}{EStatus}}
-{\footnotesize\ttfamily enum class Potato\+Lib\+::\+Element\+Array\+Object\+::\+EStatus\hspace{0.3cm}{\ttfamily [strong]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4c}{Potato\+Lib\+::\+Element\+Array\+Object\+::\+EStatus}}\hspace{0.3cm}{\ttfamily [strong]}}
 
 
 
- \mbox{\hyperlink{_element_array_object_8h_source}{Element\+Array\+Object.\+h}} の \mbox{\hyperlink{_element_array_object_8h_source_l00008}{8}} 行目に定義があります。
+エラーハンドリング用ステータス 
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eSuccess@{eSuccess}!PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}}\index{PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}!eSuccess@{eSuccess}}}\Hypertarget{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4ca27a410c6b361732f3b4237bff6478a44}\label{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4ca27a410c6b361732f3b4237bff6478a44} 
+e\+Success&成功 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eCreateFail@{eCreateFail}!PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}}\index{PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}!eCreateFail@{eCreateFail}}}\Hypertarget{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4ca3672416286ea941c22e7d8bcd9edf359}\label{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4ca3672416286ea941c22e7d8bcd9edf359} 
+e\+Create\+Fail&オブジェクト作成失敗 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+ \mbox{\hyperlink{_element_array_object_8h_source}{Element\+Array\+Object.\+h}} の \mbox{\hyperlink{_element_array_object_8h_source_l00021}{21}} 行目に定義があります。
 
 
 
@@ -44,8 +67,20 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_a3864b
 \index{PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}!Create@{Create}}
 \index{Create@{Create}!PotatoLib::ElementArrayObject@{PotatoLib::ElementArrayObject}}
 \doxysubsubsection{\texorpdfstring{Create()}{Create()}}
-{\footnotesize\ttfamily Element\+Array\+Object\+::\+EStatus Potato\+Lib\+::\+Element\+Array\+Object\+::\+Create (\begin{DoxyParamCaption}\item[{const Vertex\+Index\+Array \&}]{a\+Index\+Array }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_ad5cc2aaa36ab9a0d10c347e2c92dfa4c}{Element\+Array\+Object\+::\+EStatus}} Potato\+Lib\+::\+Element\+Array\+Object\+::\+Create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_type_8h_a7397e17c43f3d193d97ac802db6da648}{Vertex\+Index\+Array}} \&}]{a\+Index\+Array }\end{DoxyParamCaption})}
 
+
+
+頂点インデックスオブジェクト作成. 
+
+
+\begin{DoxyParams}{引数}
+{\em a\+Index\+Array} & 頂点配列 \doxylink{_type_8h_a7397e17c43f3d193d97ac802db6da648}{Vertex\+Index\+Array} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+エラーハンドリング用リザルト 
+\end{DoxyReturn}
 
 
  \mbox{\hyperlink{_element_array_object_8cpp_source}{Element\+Array\+Object.\+cpp}} の \mbox{\hyperlink{_element_array_object_8cpp_source_l00009}{9}} 行目に定義があります。
@@ -61,11 +96,15 @@ uint32\+\_\+t \mbox{\hyperlink{struct_potato_lib_1_1_element_array_object_a3864b
 
 
 
- \mbox{\hyperlink{_element_array_object_8h_source}{Element\+Array\+Object.\+h}} の \mbox{\hyperlink{_element_array_object_8h_source_l00013}{13}} 行目に定義があります。
+インデックスオブジェクトハンドル 
+
+
+
+ \mbox{\hyperlink{_element_array_object_8h_source}{Element\+Array\+Object.\+h}} の \mbox{\hyperlink{_element_array_object_8h_source_l00029}{29}} 行目に定義があります。
 
 
 
 この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-Project/\+Source/\+Render/\+Buffer/Element\+Array\+Object.\+h\item 
-Project/\+Source/\+Render/\+Buffer/Element\+Array\+Object.\+cpp\end{DoxyCompactItemize}
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Buffer/\mbox{\hyperlink{_element_array_object_8h}{Element\+Array\+Object.\+h}}\item 
+G\+:/\+Git\+Repository/\+Potato\+Lib/\+Project/\+Projects/\+Potato\+Lib/\+Source/\+Render/\+Buffer/Element\+Array\+Object.\+cpp\end{DoxyCompactItemize}

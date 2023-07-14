@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PotatoLib: Project/Source/Render/Shader/ProgramObject.h ソースファイル</title>
+<title>PotatoLib: G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Shader/ProgramObject.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -93,37 +93,47 @@ $(document).ready(function(){initNavTree('_program_object_8h_source.html',''); i
   <div class="headertitle"><div class="title">ProgramObject.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Framework\Type.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>PotatoLib {</div>
+<a href="_program_object_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">struct </span>ShaderObject;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_type_8h.html">Framework\Type.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_program_object.html">    9</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_program_object.html">ProgramObject</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">enum class</span> EStatus {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            eSuccess,</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            eCreateFail,</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            eLinkFail,</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        };</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        uint32_t mHandle = 0u;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        EStatus Create();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        EStatus Attach(<span class="keyword">const</span> <a class="code hl_struct" href="struct_potato_lib_1_1_shader_object.html">ShaderObject</a>&amp; aShaderObject);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        EStatus Link();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    };</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
-<div class="ttc" id="astruct_potato_lib_1_1_program_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html">PotatoLib::ProgramObject</a></div><div class="ttdef"><b>Definition</b> <a href="_program_object_8h_source.html#l00009">ProgramObject.h:9</a></div></div>
-<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html">PotatoLib::ShaderObject</a></div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00007">ShaderObject.h:7</a></div></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>PotatoLib {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span>ShaderObject;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_program_object.html">   17</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_program_object.html">ProgramObject</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">   22</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44">eSuccess</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359">eCreateFail</a>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85">eLinkFail</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        };</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_program_object.html#ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7">   32</a></span>        uint32_t <a class="code hl_variable" href="struct_potato_lib_1_1_program_object.html#ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7">mHandle</a> = 0u;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_enumeration" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_program_object.html#ace5f2c5f6e82591268c2e0fa42428c2d">Create</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_enumeration" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_program_object.html#aa74c2d9eb626782e8b3b03c0c09f795d">Attach</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_potato_lib_1_1_shader_object.html">ShaderObject</a>&amp; aShaderObject);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_enumeration" href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_program_object.html#a0c1d1664ba460f23ddf66421227bb5af">Link</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    };</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="ttc" id="a_type_8h_html"><div class="ttname"><a href="_type_8h.html">Type.h</a></div><div class="ttdoc">汎用型宣言用ファイル</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html">PotatoLib::ProgramObject</a></div><div class="ttdoc">シェーダーステージ結合クラス</div><div class="ttdef"><b>Definition</b> <a href="_program_object_8h_source.html#l00017">ProgramObject.h:17</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_a0c1d1664ba460f23ddf66421227bb5af"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#a0c1d1664ba460f23ddf66421227bb5af">PotatoLib::ProgramObject::Link</a></div><div class="ttdeci">EStatus Link()</div><div class="ttdoc">各シェーダーステージをリンク.</div><div class="ttdef"><b>Definition</b> <a href="_program_object_8cpp_source.html#l00032">ProgramObject.cpp:32</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_aa74c2d9eb626782e8b3b03c0c09f795d"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#aa74c2d9eb626782e8b3b03c0c09f795d">PotatoLib::ProgramObject::Attach</a></div><div class="ttdeci">EStatus Attach(const ShaderObject &amp;aShaderObject)</div><div class="ttdoc">アタッチするシェーダーオブジェクト指定.</div><div class="ttdef"><b>Definition</b> <a href="_program_object_8cpp_source.html#l00023">ProgramObject.cpp:23</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_ac38970c310fe84d1b1fe823a2217cead"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217cead">PotatoLib::ProgramObject::EStatus</a></div><div class="ttdeci">EStatus</div><div class="ttdoc">エラーハンドリング用ステータス</div><div class="ttdef"><b>Definition</b> <a href="_program_object_8h_source.html#l00022">ProgramObject.h:22</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada27a410c6b361732f3b4237bff6478a44">PotatoLib::ProgramObject::EStatus::eSuccess</a></div><div class="ttdeci">@ eSuccess</div><div class="ttdoc">成功</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada3672416286ea941c22e7d8bcd9edf359">PotatoLib::ProgramObject::EStatus::eCreateFail</a></div><div class="ttdeci">@ eCreateFail</div><div class="ttdoc">オブジェクト作成失敗</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#ac38970c310fe84d1b1fe823a2217ceada9959f60b9e0c8872250d4a7e43712d85">PotatoLib::ProgramObject::EStatus::eLinkFail</a></div><div class="ttdeci">@ eLinkFail</div><div class="ttdoc">リンク失敗</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#ac9fb517ef8fdcb5ffc0cc8aaeef3f2f7">PotatoLib::ProgramObject::mHandle</a></div><div class="ttdeci">uint32_t mHandle</div><div class="ttdoc">プログラムハンドル</div><div class="ttdef"><b>Definition</b> <a href="_program_object_8h_source.html#l00032">ProgramObject.h:32</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_program_object_html_ace5f2c5f6e82591268c2e0fa42428c2d"><div class="ttname"><a href="struct_potato_lib_1_1_program_object.html#ace5f2c5f6e82591268c2e0fa42428c2d">PotatoLib::ProgramObject::Create</a></div><div class="ttdeci">EStatus Create()</div><div class="ttdoc">プログラムオブジェクト作成</div><div class="ttdef"><b>Definition</b> <a href="_program_object_8cpp_source.html#l00011">ProgramObject.cpp:11</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html">PotatoLib::ShaderObject</a></div><div class="ttdoc">シェーダーオブジェクトクラス</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00015">ShaderObject.h:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_0598e2f9d8cb32f037bce7e1a6f939ce.html">Source</a></li><li class="navelem"><a class="el" href="dir_23363cb32ef244da0521aa994d8b2776.html">Render</a></li><li class="navelem"><a class="el" href="dir_548958cfca6102dfa9ab09c4a4159c83.html">Shader</a></li><li class="navelem"><b>ProgramObject.h</b></li>
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_ee6abb1a8641b4917ca68aeb95f0e21e.html">Projects</a></li><li class="navelem"><a class="el" href="dir_4142c67eb999c1ccabb5b0e63db62c6e.html">PotatoLib</a></li><li class="navelem"><a class="el" href="dir_7309ff20c5798acd695f1578b297d69a.html">Source</a></li><li class="navelem"><a class="el" href="dir_b8ec33abf4c7461486a643570c1b9b69.html">Render</a></li><li class="navelem"><a class="el" href="dir_bb98d09f2be5da629ce7728b9693903c.html">Shader</a></li><li class="navelem"><a class="el" href="_program_object_8h.html">ProgramObject.h</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

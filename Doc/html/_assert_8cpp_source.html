@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PotatoLib: Project/Source/Utility/Assert.cpp ソースファイル</title>
+<title>PotatoLib: G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Utility/Assert.cpp ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -93,25 +93,27 @@ $(document).ready(function(){initNavTree('_assert_8cpp_source.html',''); initRes
   <div class="headertitle"><div class="title">Assert.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;Assert.h&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_assert_8h.html">Assert.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>PotatoLib {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keywordtype">void</span> Assert::Check(<span class="keyword">const</span> <span class="keywordtype">char</span>* aMessage) {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        Check(<span class="keyword">false</span>, aMessage);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_potato_lib_1_1_assert.html#a4d14f2fda39f4c790227a6d368c6bb65">    6</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_potato_lib_1_1_assert.html#a4d14f2fda39f4c790227a6d368c6bb65">Assert::Check</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* aMessage) {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <a class="code hl_function" href="class_potato_lib_1_1_assert.html#a4d14f2fda39f4c790227a6d368c6bb65">Check</a>(<span class="keyword">false</span>, aMessage);</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    }</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span> Assert::Check(<span class="keywordtype">bool</span> aCondition, <span class="keyword">const</span> <span class="keywordtype">char</span>* aMessage) {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">// TODO: 将来的にそれっぽくする</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_potato_lib_1_1_assert.html#abf6440911044f8581800497964b4e53d">    9</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_potato_lib_1_1_assert.html#a4d14f2fda39f4c790227a6d368c6bb65">Assert::Check</a>(<span class="keywordtype">bool</span> aCondition, <span class="keyword">const</span> <span class="keywordtype">char</span>* aMessage) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">// TODO: �����I�ɂ�����ۂ�����</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        assert(aCondition &amp;&amp; aMessage);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    }</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+<div class="ttc" id="a_assert_8h_html"><div class="ttname"><a href="_assert_8h.html">Assert.h</a></div><div class="ttdoc">汎用アサートクラス</div></div>
+<div class="ttc" id="aclass_potato_lib_1_1_assert_html_a4d14f2fda39f4c790227a6d368c6bb65"><div class="ttname"><a href="class_potato_lib_1_1_assert.html#a4d14f2fda39f4c790227a6d368c6bb65">PotatoLib::Assert::Check</a></div><div class="ttdeci">static void Check(const char *aMessage)</div><div class="ttdoc">アサート.</div><div class="ttdef"><b>Definition</b> <a href="_assert_8cpp_source.html#l00006">Assert.cpp:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_0598e2f9d8cb32f037bce7e1a6f939ce.html">Source</a></li><li class="navelem"><a class="el" href="dir_0c2889f4776453a5e8cfeaee9d1a7843.html">Utility</a></li><li class="navelem"><b>Assert.cpp</b></li>
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_ee6abb1a8641b4917ca68aeb95f0e21e.html">Projects</a></li><li class="navelem"><a class="el" href="dir_4142c67eb999c1ccabb5b0e63db62c6e.html">PotatoLib</a></li><li class="navelem"><a class="el" href="dir_7309ff20c5798acd695f1578b297d69a.html">Source</a></li><li class="navelem"><a class="el" href="dir_451a2b13970a7acd4b55eaa41f49cbb1.html">Utility</a></li><li class="navelem"><b>Assert.cpp</b></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

@@ -1,40 +1,44 @@
 \doxysection{Window.\+h}
-\hypertarget{_window_8h_source}{}\label{_window_8h_source}\index{Project/Source/Framework/Window.h@{Project/Source/Framework/Window.h}}
-
+\hypertarget{_window_8h_source}{}\label{_window_8h_source}\index{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/Window.h@{G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Framework/Window.h}}
+\mbox{\hyperlink{_window_8h}{\mbox{[}詳解\mbox{]}}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00002}00002\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <GLFW\(\backslash\)glfw3.h>}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00005}00005\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00006}00006\ \textcolor{keyword}{namespace\ }PotatoLib\ \{}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00007}\mbox{\hyperlink{struct_potato_lib_1_1_window}{00007}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_potato_lib_1_1_window}{Window}}\ \{}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00008}00008\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00009}00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mWidth\ =\ 640,\ mHeight\ =\ 480;}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00010}00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mPosX\ =\ -\/1300,\ mPosY\ =\ 500;}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00011}00011\ \ \ \ \ \ \ \ \ std::string\ mTitle\ =\ \textcolor{stringliteral}{"{}Title"{}};}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ GLFWwindow*\ mHandle\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00013}00013\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_window}{Window}}()\ \{}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ mHandle\ =\ glfwCreateWindow(mWidth,\ mHeight,\ mTitle.c\_str(),\ NULL,\ NULL);}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSetWindowPos(mHandle,\ mPosX,\ mPosY);}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00001}00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00005}00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <GLFW\(\backslash\)glfw3.h>}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00010}00010\ \textcolor{keyword}{namespace\ }PotatoLib\ \{}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00017}\mbox{\hyperlink{struct_potato_lib_1_1_window}{00017}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_potato_lib_1_1_window}{Window}}\ \{}
 \DoxyCodeLine{\Hypertarget{_window_8h_source_l00018}00018\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ glfwMakeContextCurrent(mHandle);}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00020}00020\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ スワップまでの待機時間を設定する}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSwapInterval(1);}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00023}00023\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ウィンドウサイズ変わったコールバック}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSetFramebufferSizeCallback(mHandle,\ [](\textcolor{keyword}{auto}\ aWindow,\ \textcolor{keyword}{auto}\ aWidth,\ \textcolor{keyword}{auto}\ aHeight)\ \{\});}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00026}00026\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Windowクラスをglfwと関連付ける}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSetWindowUserPointer(mHandle,\ \textcolor{keyword}{this});}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00029}00029\ }
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ カーソルの設定}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//glfwSetInputMode(mHandle,\ GLFW\_CURSOR,\ GLFW\_CURSOR\_DISABLED);}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00033}00033\ \ \ \ \ \};}
-\DoxyCodeLine{\Hypertarget{_window_8h_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00020}\mbox{\hyperlink{struct_potato_lib_1_1_window_a8267d755234663da21c17849ff9bc810}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a8267d755234663da21c17849ff9bc810}{mWidth}}\ =\ 640;}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00022}\mbox{\hyperlink{struct_potato_lib_1_1_window_a1c7e02f34492123893ddca8f2a0d6d99}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a1c7e02f34492123893ddca8f2a0d6d99}{mHeight}}\ =\ 480;}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00024}\mbox{\hyperlink{struct_potato_lib_1_1_window_a021a807fc45b2e05064fb705f157e816}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a021a807fc45b2e05064fb705f157e816}{mPosX}}\ =\ -\/1300;}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00026}\mbox{\hyperlink{struct_potato_lib_1_1_window_ad758ee77f559143869f2d9d74d49adee}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_potato_lib_1_1_window_ad758ee77f559143869f2d9d74d49adee}{mPosY}}\ =\ 500;}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00028}\mbox{\hyperlink{struct_potato_lib_1_1_window_a045c327d54f512705673163962bd273d}{00028}}\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a045c327d54f512705673163962bd273d}{mTitle}}\ =\ \textcolor{stringliteral}{"{}Title"{}};}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00030}\mbox{\hyperlink{struct_potato_lib_1_1_window_a32531a7888466f6563884fc4df247f72}{00030}}\ \ \ \ \ \ \ \ \ GLFWwindow*\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a32531a7888466f6563884fc4df247f72}{mHandle}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_window}{Window}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_potato_lib_1_1_window_a32531a7888466f6563884fc4df247f72}{mHandle}}\ =\ glfwCreateWindow(\mbox{\hyperlink{struct_potato_lib_1_1_window_a8267d755234663da21c17849ff9bc810}{mWidth}},\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a1c7e02f34492123893ddca8f2a0d6d99}{mHeight}},\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a045c327d54f512705673163962bd273d}{mTitle}}.c\_str(),\ NULL,\ NULL);}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSetWindowPos(\mbox{\hyperlink{struct_potato_lib_1_1_window_a32531a7888466f6563884fc4df247f72}{mHandle}},\ \mbox{\hyperlink{struct_potato_lib_1_1_window_a021a807fc45b2e05064fb705f157e816}{mPosX}},\ \mbox{\hyperlink{struct_potato_lib_1_1_window_ad758ee77f559143869f2d9d74d49adee}{mPosY}});}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ glfwMakeContextCurrent(\mbox{\hyperlink{struct_potato_lib_1_1_window_a32531a7888466f6563884fc4df247f72}{mHandle}});}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ スワップまでの待機時間を設定する}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSwapInterval(1);}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ウィンドウサイズ変わったコールバック}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSetFramebufferSizeCallback(\mbox{\hyperlink{struct_potato_lib_1_1_window_a32531a7888466f6563884fc4df247f72}{mHandle}},\ [](\textcolor{keyword}{auto}\ aWindow,\ \textcolor{keyword}{auto}\ aWidth,\ \textcolor{keyword}{auto}\ aHeight)\ \{\});}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Windowクラスをglfwと関連付ける}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ glfwSetWindowUserPointer(\mbox{\hyperlink{struct_potato_lib_1_1_window_a32531a7888466f6563884fc4df247f72}{mHandle}},\ \textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ カーソルの設定}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//glfwSetInputMode(mHandle,\ GLFW\_CURSOR,\ GLFW\_CURSOR\_DISABLED);}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00051}00051\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_window_8h_source_l00052}00052\ \}}
 
 \end{DoxyCode}

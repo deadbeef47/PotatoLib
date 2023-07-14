@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PotatoLib: Project/Source/Render/Shader/ShaderObject.h ソースファイル</title>
+<title>PotatoLib: G:/GitRepository/PotatoLib/Project/Projects/PotatoLib/Source/Render/Shader/ShaderObject.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">PotatoLib<span id="projectnumber">&#160;0.1</span>
    </div>
-   <div id="projectbrief">My Library</div>
+   <div id="projectbrief">PotatoLib</div>
   </td>
  </tr>
  </tbody>
@@ -93,36 +93,51 @@ $(document).ready(function(){initNavTree('_shader_object_8h_source.html',''); in
   <div class="headertitle"><div class="title">ShaderObject.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Framework\Type.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>PotatoLib {</div>
+<a href="_shader_object_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_shader_object.html">    7</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_shader_object.html">ShaderObject</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keyword">enum class</span> EStatus {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            eSuccess,</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            eCreateFail,</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            eCompileFail,</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        };</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        uint32_t mHandle = 0u;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* mSourceCode = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        EShaderType mShaderType = EShaderType::eNone;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        EStatus Setup(EShaderType aShaderType, <span class="keyword">const</span> <span class="keywordtype">char</span>* aCode);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        EStatus Create(EShaderType aShaderType);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        EStatus Compile(<span class="keyword">const</span> <span class="keywordtype">char</span>* aCode);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    };</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
-<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html">PotatoLib::ShaderObject</a></div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00007">ShaderObject.h:7</a></div></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_type_8h.html">Framework\Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>PotatoLib {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_shader_object.html">   15</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_potato_lib_1_1_shader_object.html">ShaderObject</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfe">   20</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfe">EStatus</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfea27a410c6b361732f3b4237bff6478a44">eSuccess</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfea3672416286ea941c22e7d8bcd9edf359">eCreateFail</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_enumvalue" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfea916021e445ec298d86d48a8a58d0f0eb">eCompileFail</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        };</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_shader_object.html#a8cf9afe0048be6adccd12e118f1d557e">   30</a></span>        uint32_t <a class="code hl_variable" href="struct_potato_lib_1_1_shader_object.html#a8cf9afe0048be6adccd12e118f1d557e">mHandle</a> = 0u;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_shader_object.html#a60c8e433970aae8507185b9c2a9a94a9">   32</a></span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct_potato_lib_1_1_shader_object.html#a60c8e433970aae8507185b9c2a9a94a9">mSourceCode</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_potato_lib_1_1_shader_object.html#a75a9554e3060ba230e24cbd34e748ca4">   34</a></span>        <a class="code hl_enumeration" href="_type_8h.html#a151de26a03f4d8f83767e781965e6272">EShaderType</a> <a class="code hl_variable" href="struct_potato_lib_1_1_shader_object.html#a75a9554e3060ba230e24cbd34e748ca4">mShaderType</a> = EShaderType::eNone;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_enumeration" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfe">EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_shader_object.html#a9ecdfb829df6a6c05dae4e238317ff68">Setup</a>(<a class="code hl_enumeration" href="_type_8h.html#a151de26a03f4d8f83767e781965e6272">EShaderType</a> aShaderType, <span class="keyword">const</span> <span class="keywordtype">char</span>* aCode);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_enumeration" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfe">EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_shader_object.html#a60667e673d78107af523ed75e8b748d2">Create</a>(<a class="code hl_enumeration" href="_type_8h.html#a151de26a03f4d8f83767e781965e6272">EShaderType</a> aShaderType);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_enumeration" href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfe">EStatus</a> <a class="code hl_function" href="struct_potato_lib_1_1_shader_object.html#a164b4260ff0a26b5829434f7efc7bda9">Compile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* aCode);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    };</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="ttc" id="a_type_8h_html"><div class="ttname"><a href="_type_8h.html">Type.h</a></div><div class="ttdoc">汎用型宣言用ファイル</div></div>
+<div class="ttc" id="a_type_8h_html_a151de26a03f4d8f83767e781965e6272"><div class="ttname"><a href="_type_8h.html#a151de26a03f4d8f83767e781965e6272">PotatoLib::EShaderType</a></div><div class="ttdeci">EShaderType</div><div class="ttdoc">シェーダータイプ</div><div class="ttdef"><b>Definition</b> <a href="_type_8h_source.html#l00024">Type.h:24</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html">PotatoLib::ShaderObject</a></div><div class="ttdoc">シェーダーオブジェクトクラス</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00015">ShaderObject.h:15</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a164b4260ff0a26b5829434f7efc7bda9"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a164b4260ff0a26b5829434f7efc7bda9">PotatoLib::ShaderObject::Compile</a></div><div class="ttdeci">EStatus Compile(const char *aCode)</div><div class="ttdoc">シェーダーコンパイル.</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8cpp_source.html#l00044">ShaderObject.cpp:44</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a2a3a0eefeaf361c6b0b5be875f809bfe"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfe">PotatoLib::ShaderObject::EStatus</a></div><div class="ttdeci">EStatus</div><div class="ttdoc">エラーハンドリング用ステータス</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00020">ShaderObject.h:20</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a2a3a0eefeaf361c6b0b5be875f809bfea27a410c6b361732f3b4237bff6478a44"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfea27a410c6b361732f3b4237bff6478a44">PotatoLib::ShaderObject::EStatus::eSuccess</a></div><div class="ttdeci">@ eSuccess</div><div class="ttdoc">成功</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a2a3a0eefeaf361c6b0b5be875f809bfea3672416286ea941c22e7d8bcd9edf359"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfea3672416286ea941c22e7d8bcd9edf359">PotatoLib::ShaderObject::EStatus::eCreateFail</a></div><div class="ttdeci">@ eCreateFail</div><div class="ttdoc">オブジェクト作成失敗</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a2a3a0eefeaf361c6b0b5be875f809bfea916021e445ec298d86d48a8a58d0f0eb"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a2a3a0eefeaf361c6b0b5be875f809bfea916021e445ec298d86d48a8a58d0f0eb">PotatoLib::ShaderObject::EStatus::eCompileFail</a></div><div class="ttdeci">@ eCompileFail</div><div class="ttdoc">コンパイル失敗</div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a60667e673d78107af523ed75e8b748d2"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a60667e673d78107af523ed75e8b748d2">PotatoLib::ShaderObject::Create</a></div><div class="ttdeci">EStatus Create(EShaderType aShaderType)</div><div class="ttdoc">シェーダーオブジェクト作成</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8cpp_source.html#l00020">ShaderObject.cpp:20</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a60c8e433970aae8507185b9c2a9a94a9"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a60c8e433970aae8507185b9c2a9a94a9">PotatoLib::ShaderObject::mSourceCode</a></div><div class="ttdeci">const char * mSourceCode</div><div class="ttdoc">該当シェーダーのソースコード</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00032">ShaderObject.h:32</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a75a9554e3060ba230e24cbd34e748ca4"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a75a9554e3060ba230e24cbd34e748ca4">PotatoLib::ShaderObject::mShaderType</a></div><div class="ttdeci">EShaderType mShaderType</div><div class="ttdoc">シェーダータイプ</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00034">ShaderObject.h:34</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a8cf9afe0048be6adccd12e118f1d557e"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a8cf9afe0048be6adccd12e118f1d557e">PotatoLib::ShaderObject::mHandle</a></div><div class="ttdeci">uint32_t mHandle</div><div class="ttdoc">シェーダーオブジェクトハンドル</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8h_source.html#l00030">ShaderObject.h:30</a></div></div>
+<div class="ttc" id="astruct_potato_lib_1_1_shader_object_html_a9ecdfb829df6a6c05dae4e238317ff68"><div class="ttname"><a href="struct_potato_lib_1_1_shader_object.html#a9ecdfb829df6a6c05dae4e238317ff68">PotatoLib::ShaderObject::Setup</a></div><div class="ttdeci">EStatus Setup(EShaderType aShaderType, const char *aCode)</div><div class="ttdoc">シェーダーオブジェクトセットアップ.</div><div class="ttdef"><b>Definition</b> <a href="_shader_object_8cpp_source.html#l00009">ShaderObject.cpp:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_0598e2f9d8cb32f037bce7e1a6f939ce.html">Source</a></li><li class="navelem"><a class="el" href="dir_23363cb32ef244da0521aa994d8b2776.html">Render</a></li><li class="navelem"><a class="el" href="dir_548958cfca6102dfa9ab09c4a4159c83.html">Shader</a></li><li class="navelem"><b>ShaderObject.h</b></li>
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_ee6abb1a8641b4917ca68aeb95f0e21e.html">Projects</a></li><li class="navelem"><a class="el" href="dir_4142c67eb999c1ccabb5b0e63db62c6e.html">PotatoLib</a></li><li class="navelem"><a class="el" href="dir_7309ff20c5798acd695f1578b297d69a.html">Source</a></li><li class="navelem"><a class="el" href="dir_b8ec33abf4c7461486a643570c1b9b69.html">Render</a></li><li class="navelem"><a class="el" href="dir_bb98d09f2be5da629ce7728b9693903c.html">Shader</a></li><li class="navelem"><a class="el" href="_shader_object_8h.html">ShaderObject.h</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
