@@ -12,7 +12,7 @@ namespace PotatoLib {
 	/**
 	 * @struct Window
 	 * @brief ウィンドウデータオブジェクト
-	 * @details ウィンドウ生成/パラメータ設定/初期化を実行 
+	 * @details ウィンドウ生成/パラメータ設定/初期化を実行
 	 */
 	struct Window {
 
@@ -30,7 +30,7 @@ namespace PotatoLib {
 		GLFWwindow* mHandle = nullptr;
 
 		Window() {
-		
+
 			mHandle = glfwCreateWindow(mWidth, mHeight, mTitle.c_str(), NULL, NULL);
 			glfwSetWindowPos(mHandle, mPosX, mPosY);
 

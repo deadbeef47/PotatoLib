@@ -31,7 +31,7 @@ namespace PotatoLib {
 
 		const auto lStride = std::accumulate(mAttributes.begin(), mAttributes.end(), 0, [](int32_t aVal, Attribute aAttrib) {
 			return aVal + aAttrib.mSize * sizeof(float);
-		});
+			});
 
 		uint32_t lOffset = 0;
 		for (int lIndex = 0; lIndex < mAttributes.size(); ++lIndex) {

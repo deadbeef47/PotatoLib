@@ -43,7 +43,7 @@ namespace PotatoLib {
 
 		/**
 		 * 頂点バッファオブジェクト作成.
-		 * 
+		 *
 		 * \param aDataArray 頂点データ配列 @ref VertexDataArray
 		 * \return エラーハンドリング用リザルト
 		 */
@@ -51,7 +51,7 @@ namespace PotatoLib {
 
 		/**
 		 * @brief 頂点属性を追加.
-		 * 
+		 *
 		 * \param aLocation 属性ID
 		 * \param aSize 要素数
 		 */

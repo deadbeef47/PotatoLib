@@ -33,20 +33,20 @@ namespace PotatoLib {
 
 		/**
 		 * @brief プログラムオブジェクト作成
-		 * 
+		 *
 		 * \return エラーハンドリング用リザルト
 		 */
 		EStatus Create();
 		/**
 		 * @brief アタッチするシェーダーオブジェクト指定.
-		 * 
+		 *
 		 * \param aShaderObject 対象シェーダーオブジェクト
 		 * \return エラーハンドリング用リザルト
 		 */
 		EStatus Attach(const ShaderObject& aShaderObject);
 		/**
 		 * @brief 各シェーダーステージをリンク.
-		 * 
+		 *
 		 * \return エラーハンドリング用リザルト
 		 */
 		EStatus Link();

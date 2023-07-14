@@ -6,10 +6,10 @@
 
 #include <memory>
 
-/**
- * @class Singleton.
- * @brief 汎用シングルトンクラス
- */
+ /**
+  * @class Singleton.
+  * @brief 汎用シングルトンクラス
+  */
 template<typename T>
 class Singleton {
 public:
@@ -26,9 +26,9 @@ public:
 
 private:
 	//Singleton(const Singleton&) = delete;
-    //Singleton& operator=(const Singleton&) = delete;
-    //Singleton(Singleton&&) = delete;
-    //Singleton& operator=(Singleton&&) = delete;
+	//Singleton& operator=(const Singleton&) = delete;
+	//Singleton(Singleton&&) = delete;
+	//Singleton& operator=(Singleton&&) = delete;
 
 private:
 	//! インスタンス

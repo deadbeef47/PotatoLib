@@ -1,4 +1,4 @@
-#include "GameApplication.h"
+﻿#include "GameApplication.h"
 #include "Utility\Log.h"
 
 #include <GL\glew.h>
@@ -19,7 +19,7 @@ namespace PotatoLib {
 		glfwSetErrorCallback([](int aError, const char* aDescription) {
 			PotatoLog("Error Number: ", aError);
 			PotatoLog("Description: ", aDescription);
-		});
+			});
 
 		if (glfwInit() == GL_FALSE) {
 			PotatoLog("glfwInit error");

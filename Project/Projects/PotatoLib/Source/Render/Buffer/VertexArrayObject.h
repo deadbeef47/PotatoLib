@@ -6,7 +6,7 @@
 
 #include "Framework\Type.h"
 
-namespace  PotatoLib{
+namespace  PotatoLib {
 
 	struct BufferObject;
 

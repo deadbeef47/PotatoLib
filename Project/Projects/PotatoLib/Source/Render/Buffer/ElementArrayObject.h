@@ -30,7 +30,7 @@ namespace PotatoLib {
 
 		/**
 		 * @brief 頂点インデックスオブジェクト作成.
-		 * 
+		 *
 		 * \param aIndexArray 頂点配列 @ref VertexIndexArray
 		 * \return エラーハンドリング用リザルト
 		 */

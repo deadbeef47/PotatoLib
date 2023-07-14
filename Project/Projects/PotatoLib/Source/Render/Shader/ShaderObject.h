@@ -38,7 +38,7 @@ namespace PotatoLib {
 		 * @details シェーダーオブジェクト作成 → コンパイルを行う
 		 * \param aShaderType シェーダータイプ
 		 * \param aCode シェーダーソース
-		 * \return 
+		 * \return
 		 */
 		EStatus Setup(EShaderType aShaderType, const char* aCode);
 
@@ -51,7 +51,7 @@ namespace PotatoLib {
 
 		/**
 		 * @brief シェーダーコンパイル.
-		 * 
+		 *
 		 * \param aCode シェーダーソース
 		 * \return エラーハンドリング用リザルト
 		 */

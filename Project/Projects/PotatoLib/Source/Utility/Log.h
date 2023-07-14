@@ -19,7 +19,7 @@ namespace PotatoLib {
 	public:
 		/**
 		 * @brief ？.
-		 * 
+		 *
 		 */
 		static void Show() {
 			std::cout << std::endl;

@@ -1,28 +1,28 @@
-/*****************************************************************//**
+ï»¿/*****************************************************************//**
  * \file   Assert.h
- * \brief  ”Ä—pƒAƒT[ƒgƒNƒ‰ƒX
+ * \brief  æ±ç”¨ã‚¢ã‚µãƒ¼ãƒˆã‚¯ãƒ©ã‚¹
  *********************************************************************/
 #pragma once
 
-//#define PotatoAssert(condition, ...) PotatoLib::Assert::Check(condition, __VA_ARGS__)
+ //#define PotatoAssert(condition, ...) PotatoLib::Assert::Check(condition, __VA_ARGS__)
 
 namespace PotatoLib {
 	/**
 	 * @class Assert.
-	 * @brief ”Ä—pƒAƒT[ƒgƒNƒ‰ƒX
+	 * @brief æ±ç”¨ã‚¢ã‚µãƒ¼ãƒˆã‚¯ãƒ©ã‚¹
 	 */
 	class Assert {
 	public:
 		/**
-		 * @brief ƒAƒT[ƒg.
-		 * \param aMessage ƒƒbƒZ[ƒW
+		 * @brief ã‚¢ã‚µãƒ¼ãƒˆ.
+		 * \param aMessage ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		 */
 		static void Check(const char* aMessage);
 
 		/**
-		 * @brief ƒAƒT[ƒg.
-		 * \param aCondition •\¦ğŒ(false‚Ìê‡•\¦)
-		 * \param aMessage ƒƒbƒZ[ƒW
+		 * @brief ã‚¢ã‚µãƒ¼ãƒˆ.
+		 * \param aCondition è¡¨ç¤ºæ¡ä»¶(falseã®å ´åˆè¡¨ç¤º)
+		 * \param aMessage ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		 */
 		static void Check(bool aCondition, const char* aMessage);
 	};
