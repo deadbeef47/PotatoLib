@@ -4,7 +4,7 @@
  *********************************************************************/
 #pragma once
 
-#include "Framework\Type.h"
+#include ".\Type\Type.h"
 
 namespace PotatoLib {
 

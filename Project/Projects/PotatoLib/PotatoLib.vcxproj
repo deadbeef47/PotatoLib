@@ -190,7 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Framework\GameApplication.h" />
-    <ClInclude Include="Source\Framework\Type.h" />
+    <ClInclude Include="Source\Type\Type.h" />
     <ClInclude Include="Source\Framework\Window.h" />
     <ClInclude Include="Source\Render\Buffer\BufferObject.h" />
     <ClInclude Include="Source\Render\Buffer\ElementArrayObject.h" />

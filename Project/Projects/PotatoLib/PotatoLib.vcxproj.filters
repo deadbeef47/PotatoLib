@@ -65,7 +65,7 @@
     <ClInclude Include="Source\Utility\Log.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Framework\Type.h">
+    <ClInclude Include="Source\Type\Type.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Source\Render\Buffer\VertexArrayObject.h">
