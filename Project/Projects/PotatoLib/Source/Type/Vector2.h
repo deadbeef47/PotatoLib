@@ -18,6 +18,11 @@ namespace PotatoLib {
 	 */
 	struct Vector2
 	{
+		//! (0.0f, 0.0f)のゼロベクトル
+		static const Vector2 Zero;
+		//! (1.0f, 1.0f)のベクトル
+		static const Vector2 One;
+
 		union {
 			struct {
 				float x; //!< x成分
