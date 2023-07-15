@@ -185,12 +185,13 @@
     <ClCompile Include="Source\Render\PolygonRender.cpp" />
     <ClCompile Include="Source\Render\Shader\ProgramObject.cpp" />
     <ClCompile Include="Source\Render\Shader\ShaderObject.cpp" />
+    <ClCompile Include="Source\Type\Vector2.cpp" />
     <ClCompile Include="Source\Utility\Assert.cpp" />
     <ClCompile Include="Source\Utility\Log.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Framework\GameApplication.h" />
-    <ClInclude Include="Source\Framework\Type.h" />
+    <ClInclude Include="Source\Type\Type.h" />
     <ClInclude Include="Source\Framework\Window.h" />
     <ClInclude Include="Source\Render\Buffer\BufferObject.h" />
     <ClInclude Include="Source\Render\Buffer\ElementArrayObject.h" />
@@ -198,6 +199,7 @@
     <ClInclude Include="Source\Render\PolygonRender.h" />
     <ClInclude Include="Source\Render\Shader\ProgramObject.h" />
     <ClInclude Include="Source\Render\Shader\ShaderObject.h" />
+    <ClInclude Include="Source\Type\Vector2.h" />
     <ClInclude Include="Source\Utility\Assert.h" />
     <ClInclude Include="Source\Utility\Log.h" />
     <ClInclude Include="Source\Utility\Singleton.h" />

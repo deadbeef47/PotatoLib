@@ -1,7 +1,7 @@
 ﻿#pragma once
 
 #include <Framework/GameApplication.h>
-#include <Framework/Type.h>
+#include <Type/Type.h>
 #include <Render/PolygonRender.h>
 
 
