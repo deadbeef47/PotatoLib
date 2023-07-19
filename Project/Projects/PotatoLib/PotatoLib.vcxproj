@@ -178,6 +178,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Utility\Math.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
     <ClCompile Include="Source\Render\Buffer\BufferObject.cpp" />
     <ClCompile Include="Source\Render\Buffer\ElementArrayObject.cpp" />
@@ -190,6 +191,7 @@
     <ClCompile Include="Source\Utility\Log.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Utility\Math.h" />
     <ClInclude Include="Source\Framework\GameApplication.h" />
     <ClInclude Include="Source\Type\Type.h" />
     <ClInclude Include="Source\Framework\Window.h" />
