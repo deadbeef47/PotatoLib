@@ -90,4 +90,7 @@ TEST(Vector2, Operator) {
 	CheckVectorVV(PotatoLib::Vector2(50.0f, 1.0f) * 3.0f, PotatoLib::Vector2(150.0f, 3.0f));
 	CheckVectorVV(3.0f * PotatoLib::Vector2(50.0f, 1.0f), PotatoLib::Vector2(150.0f, 3.0f));
 	CheckVectorVV(PotatoLib::Vector2(50.0f, 1.0f) / 10.0f, PotatoLib::Vector2(5.0f, 0.1f));
+
+	CheckVectorVV(+PotatoLib::Vector2(1.0f, 0.0f), PotatoLib::Vector2(1.0f, 0.0f));
+	CheckVectorVV(-PotatoLib::Vector2(1.0f, 0.0f), PotatoLib::Vector2(-1.0f, 0.0f));
 }
