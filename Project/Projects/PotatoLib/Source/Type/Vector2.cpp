@@ -3,6 +3,8 @@
 #include <string>
 #include <glm/gtx/vector_angle.hpp>
 
+#include "Utility/Math.h"
+
 #include <iostream>
 
 namespace PotatoLib
@@ -39,11 +41,11 @@ namespace PotatoLib
 	}
 
 	float Vector2::Angle(const Vector2& v1, const Vector2& v2) {
-		return glm::degrees(glm::angle(Normalize(v1).glmVec2, Normalize(v2).glmVec2));
+		return Math::ToDegree(glm::angle(Normalize(v1).glmVec2, Normalize(v2).glmVec2));
 	}
 
 	Vector2 Vector2::Direction(float angle) {
-		return Vector2(glm::cos(glm::radians(angle)), glm::sin(glm::radians(angle)));
+		return Vector2(Math::Cos(angle), Math::Sin(angle));
 	}
 
 	float Vector2::Distance(const Vector2& v1, const Vector2& v2) {
