@@ -1,6 +1,7 @@
-﻿
+
 root = true
 
 [*]
 charset = utf-8-bom
+# charset = utf-8
 
