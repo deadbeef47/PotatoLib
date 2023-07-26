@@ -60,6 +60,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TestMath.cpp" />
+    <ClCompile Include="TestPathUtility.cpp" />
+    <ClCompile Include="TestStringUtility.cpp" />
     <ClCompile Include="TestVector2.cpp" />
   </ItemGroup>
   <ItemGroup>
