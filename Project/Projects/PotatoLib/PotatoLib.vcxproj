@@ -196,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Utility\Converter.h" />
+    <ClInclude Include="Source\Utility\ForwardDeclarationMacro.h" />
     <ClInclude Include="Source\Utility\Math.h" />
     <ClInclude Include="Source\Framework\GameApplication.h" />
     <ClInclude Include="Source\Type\Type.h" />
