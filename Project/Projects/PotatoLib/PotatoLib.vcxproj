@@ -190,6 +190,7 @@
     <ClCompile Include="Source\Type\Vector2.cpp" />
     <ClCompile Include="Source\Utility\Assert.cpp" />
     <ClCompile Include="Source\Utility\Log.cpp" />
+    <ClCompile Include="Source\Utility\StringUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Utility\Converter.h" />
@@ -211,6 +212,7 @@
   <ItemGroup>
     <None Include="GLSL\PolygonRender.frag" />
     <None Include="GLSL\PolygonRender.vert" />
+    <ClInclude Include="Source\Utility\StringUtility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -51,6 +51,9 @@
     <ClCompile Include="Source\Utility\Converter.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Utility\StringUtility.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Utility\Singleton.h">
@@ -105,5 +108,8 @@
   <ItemGroup>
     <None Include="GLSL\PolygonRender.vert" />
     <None Include="GLSL\PolygonRender.frag" />
+    <ClInclude Include="Source\Utility\StringUtility.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
