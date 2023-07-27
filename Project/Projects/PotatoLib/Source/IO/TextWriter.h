@@ -9,6 +9,18 @@
 STRING_FORWARD
 
 namespace PotatoLib {
+
+	// TODO: 各モードへの対応を考える
+	/**
+	 * @enum 書き込みモード.
+	 */
+	enum class SaveMode {
+		eNone,		//!< 指定無し エラー検出用
+		eCreate,	//!< 新規作成 既に存在する場合は
+		eOverride,	//!< 上書き
+		eAppend,	//!< 加筆
+	};
+
 	/**
 	 * @class TextReader.
 	 * @brief テキスト入力
