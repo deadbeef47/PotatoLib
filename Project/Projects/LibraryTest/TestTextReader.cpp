@@ -25,6 +25,14 @@ TEST(TextReaderTest, LoadExistingFile) {
     // 読み込まれたテキストの内容が正しいかを検証
     ASSERT_EQ(testFileContent, loadedText);
 
+    loadResult = textReader.Load(testFileName, &loadedText);
+
+    // ファイルの読み込みが成功したかを検証
+    ASSERT_TRUE(loadResult);
+
+    // 読み込まれたテキストの内容が正しいかを検証
+    ASSERT_EQ(testFileContent, loadedText);
+
     // テスト用のファイルを削除
     remove(testFileName.c_str());
 }

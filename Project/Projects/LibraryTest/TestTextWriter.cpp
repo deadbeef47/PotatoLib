@@ -8,7 +8,7 @@ TEST(TextWriterTest, SaveAndCreateDirectory) {
     const std::string testFile = testDir + "/test_file.txt";
 
     // テスト用の保存する複数行のテキスト
-    const std::string testText =
+    std::string testText =
         "Hello, Test Text!\n"
         "This is a multi-line text.\n"
         "It has three lines.\n";
@@ -29,15 +29,34 @@ TEST(TextWriterTest, SaveAndCreateDirectory) {
     while (std::getline(file, line)) {
         loadedText += line + "\n";
     }
-    file.close();
 
     // テキストの内容が正しいかを検証
     ASSERT_EQ(testText, loadedText);
+
+
+    testText = "HelloWorld\n";
+    // TextWriterを使ってテキストを保存する
+    saveResult = PotatoLib::TextWriter::Save(testFile, testText);
+
+    // テキストの保存が成功したかを検証
+    ASSERT_TRUE(saveResult);
+
+    // 再度書き込みテストを行う
+    file = std::ifstream(testFile.c_str());
+
+    // 保存されたテキストを読み込む（複数行）
+    loadedText = "";
+    while (std::getline(file, line)) {
+        loadedText += line + "\n";
+    }
+
+    // テキストの内容が正しいかを検証
+    ASSERT_EQ(testText, loadedText);
+
+    file.close();
 
     // テストが終わったらファイルを削除
     remove(testFile.c_str());
     // テスト用のディレクトリを削除
     _rmdir(testDir.c_str());
-
 }
-
