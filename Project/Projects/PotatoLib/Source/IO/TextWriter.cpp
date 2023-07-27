@@ -32,11 +32,6 @@ namespace PotatoLib {
 			errno = 0;
 			if (_mkdir(lCreatedFolder.c_str()) == -1) continue;
 
-			// 指定パスは存在しない
-			if (errno == ENOENT) {
-				lIsFailCreateDir = true;
-				break;
-			}
 			lCreatedFolder += "/";
 		}
 		errno = 0;
