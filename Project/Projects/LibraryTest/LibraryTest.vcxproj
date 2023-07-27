@@ -62,6 +62,8 @@
     <ClCompile Include="TestMath.cpp" />
     <ClCompile Include="TestPathUtility.cpp" />
     <ClCompile Include="TestStringUtility.cpp" />
+    <ClCompile Include="TestTextReader.cpp" />
+    <ClCompile Include="TestTextWriter.cpp" />
     <ClCompile Include="TestVector2.cpp" />
   </ItemGroup>
   <ItemGroup>
