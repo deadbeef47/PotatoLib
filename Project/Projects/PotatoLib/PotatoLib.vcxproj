@@ -179,6 +179,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\IO\TextReader.cpp" />
+    <ClCompile Include="Source\IO\TextWriter.cpp" />
     <ClCompile Include="Source\Utility\Converter.cpp" />
     <ClCompile Include="Source\Utility\Math.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
@@ -195,6 +197,8 @@
     <ClCompile Include="Source\Utility\StringUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\IO\TextReader.h" />
+    <ClInclude Include="Source\IO\TextWriter.h" />
     <ClInclude Include="Source\Utility\Converter.h" />
     <ClInclude Include="Source\Utility\ForwardDeclarationMacro.h" />
     <ClInclude Include="Source\Utility\Math.h" />
