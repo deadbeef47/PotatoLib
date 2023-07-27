@@ -43,7 +43,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -127,6 +127,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8-bom %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -178,6 +179,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\IO\TextReader.cpp" />
+    <ClCompile Include="Source\IO\TextWriter.cpp" />
+    <ClCompile Include="Source\Utility\Converter.cpp" />
     <ClCompile Include="Source\Utility\Math.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
     <ClCompile Include="Source\Render\Buffer\BufferObject.cpp" />
@@ -189,8 +193,14 @@
     <ClCompile Include="Source\Type\Vector2.cpp" />
     <ClCompile Include="Source\Utility\Assert.cpp" />
     <ClCompile Include="Source\Utility\Log.cpp" />
+    <ClCompile Include="Source\Utility\PathUtility.cpp" />
+    <ClCompile Include="Source\Utility\StringUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\IO\TextReader.h" />
+    <ClInclude Include="Source\IO\TextWriter.h" />
+    <ClInclude Include="Source\Utility\Converter.h" />
+    <ClInclude Include="Source\Utility\ForwardDeclarationMacro.h" />
     <ClInclude Include="Source\Utility\Math.h" />
     <ClInclude Include="Source\Framework\GameApplication.h" />
     <ClInclude Include="Source\Type\Type.h" />
@@ -204,11 +214,9 @@
     <ClInclude Include="Source\Type\Vector2.h" />
     <ClInclude Include="Source\Utility\Assert.h" />
     <ClInclude Include="Source\Utility\Log.h" />
+    <ClInclude Include="Source\Utility\PathUtility.h" />
     <ClInclude Include="Source\Utility\Singleton.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="GLSL\PolygonRender.frag" />
-    <None Include="GLSL\PolygonRender.vert" />
+    <ClInclude Include="Source\Utility\StringUtility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
