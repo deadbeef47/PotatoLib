@@ -179,6 +179,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\IO\CSVReader.cpp" />
     <ClCompile Include="Source\IO\TextReader.cpp" />
     <ClCompile Include="Source\IO\TextWriter.cpp" />
     <ClCompile Include="Source\Utility\Converter.cpp" />
@@ -197,6 +198,7 @@
     <ClCompile Include="Source\Utility\StringUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\IO\CSVReader.h" />
     <ClInclude Include="Source\IO\TextReader.h" />
     <ClInclude Include="Source\IO\TextWriter.h" />
     <ClInclude Include="Source\Utility\Converter.h" />
