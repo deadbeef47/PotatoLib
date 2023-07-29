@@ -98,6 +98,10 @@ TEST(CSVReaderTest, GetFloatInvalidIndices) {
     PotatoLib::CSVReader csvReader;
     csvReader.Load(testFileName);
 
+    ASSERT_EQ(csvReader.GetInt(0, 0), 1);
+    ASSERT_EQ(csvReader.GetInt(1, 1), 5);
+    ASSERT_EQ(csvReader.GetInt(1, 100), 0);
+
     // 存在しない位置のデータにアクセスするテスト
     ASSERT_FLOAT_EQ(csvReader.GetFloat(2, 0), 0.0f);
     ASSERT_FLOAT_EQ(csvReader.GetFloat(0, 3), 0.0f);
