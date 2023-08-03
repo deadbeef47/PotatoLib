@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -182,6 +182,7 @@
     <ClCompile Include="Source\IO\CSVReader.cpp" />
     <ClCompile Include="Source\IO\TextReader.cpp" />
     <ClCompile Include="Source\IO\TextWriter.cpp" />
+    <ClCompile Include="Source\Render\Texture\TextureLoader.cpp" />
     <ClCompile Include="Source\Utility\Converter.cpp" />
     <ClCompile Include="Source\Utility\Math.cpp" />
     <ClCompile Include="Source\Framework\GameApplication.cpp" />
@@ -201,6 +202,8 @@
     <ClInclude Include="Source\IO\CSVReader.h" />
     <ClInclude Include="Source\IO\TextReader.h" />
     <ClInclude Include="Source\IO\TextWriter.h" />
+    <ClInclude Include="Source\Render\TextureRender.h" />
+    <ClInclude Include="Source\Render\Texture\TextureLoader.h" />
     <ClInclude Include="Source\Utility\Converter.h" />
     <ClInclude Include="Source\Utility\ForwardDeclarationMacro.h" />
     <ClInclude Include="Source\Utility\Math.h" />
